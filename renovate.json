@@ -1,0 +1,59 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    ":enablePreCommit",
+    ":prHourlyLimitNone",
+    ":prConcurrentLimitNone",
+    ":timezone(Asia/Tokyo)"
+  ],
+  "configMigration": true,
+  "automergeSchedule": [
+    "after 10pm every weekday",
+    "before 5am every weekday",
+    "every weekend"
+  ],
+  "rangeStrategy": "pin",
+  "major": {
+    "automerge": false
+  },
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true
+  },
+  "packageRules": [
+    {
+      "automerge": true,
+      "matchManagers": [
+        "pre-commit"
+      ]
+    },
+    {
+      "automerge": true,
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ]
+    },
+    {
+      "matchDatasources": [
+        "docker"
+      ],
+      "matchPackageNames": [
+        "python"
+      ],
+      "separateMinorPatch": true,
+      "minor": {
+        "automerge": false
+      }
+    }
+  ],
+  "vulnerabilityAlerts": {
+    "enabled": true,
+    "labels": [
+      "security"
+    ]
+  }
+}
