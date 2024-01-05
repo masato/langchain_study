@@ -38,8 +38,11 @@
       ]
     },
     {
-      "matchPackageNames": [
+      "matchManagers": [
         "poetry"
+      ],
+      "matchPackageNames": [
+        "python"
       ],
       "matchCurrentVersion": "<=3.11",
       "allowedVersions": "3.11.7",
