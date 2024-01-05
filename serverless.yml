@@ -1,0 +1,48 @@
+service: langchain-bolt
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  region: ap-northeast-1
+  runtime: python3.11
+  stage: ${opt:stage, 'dev'}
+  iam:
+    role: !Sub arn:aws:iam::${AWS::AccountId}:role/iamrole-masato-lambda-function
+
+package:
+  patterns:
+    - "!.venv/**"
+    - "!.env"
+    - "!.gitignore"
+    - "!.python-version"
+    - "!.git/**"
+    - "!node_modules/**"
+    - "!.mypy_cache/**"
+    - "!.ruff-cache/**"
+
+functions:
+  app:
+    name: langchain-bolt-${sls:stage}-app
+    handler: langchain_bolt.app.handler
+    memorySize: 512
+    timeout: 900
+    url: true
+
+plugins:
+  - serverless-python-requirements
+  - serverless-dotenv-plugin
+  - serverless-prune-plugin
+  - serverless-plugin-lambda-insights
+
+custom:
+  pythonRequirements:
+    useStaticCache: false
+    noDeploy:
+      - boto3
+      - botocore
+      - urllib3
+  prune:
+    automatic: true
+    number: 3
+  lambdaInsights:
+    defaultLambdaInsights: true
