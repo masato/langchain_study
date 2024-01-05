@@ -19,6 +19,10 @@ boto3 = "1.34.13"
 streamlit = "1.29.0"
 duckduckgo-search = "4.1.1"
 wikipedia = "1.4.0"
+spacy = "3.7.2"
+tiktoken = "0.5.2"
+chromadb = "0.4.22"
+chainlit = "0.7.700"
 
 
 [tool.poetry.group.dev.dependencies]

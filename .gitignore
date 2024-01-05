@@ -190,5 +190,10 @@ pyrightconfig.json
 
 # End of https://www.toptal.com/developers/gitignore/api/linux,python
 
-node_modules
-.serverless
+# Serverless
+node_modules/
+.serverless/
+
+# Chroma
+data/
+tmp/

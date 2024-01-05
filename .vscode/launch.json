@@ -12,6 +12,18 @@
         "--server.port",
         "8080"
       ]
+    },
+    {
+      "name": "Chainlit",
+      "type": "python",
+      "request": "launch",
+      "module": "chainlit",
+      "args": [
+        "run",
+        "src/langchain_jupyter/03_retrieval/chat_1.py",
+        "--port",
+        "8090"
+      ]
     }
   ]
 }
