@@ -1,19 +1,19 @@
 {
-    "python.defaultInterpreterPath": "${workspaceRoot}/.venv/bin/python",
-    "[python]": {
-        "editor.defaultFormatter": "charliermarsh.ruff",
-        "editor.formatOnSave": true,
-        "editor.codeActionsOnSave": {
-            "source.organizeImports": "explicit"
-        },
+  "python.defaultInterpreterPath": "${workspaceRoot}/.venv/bin/python",
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
     },
-    "mypy-type-checker.args": [
-        "--disallow-untyped-defs"
-    ],
-    "python.testing.pytestEnabled": true,
-    "python.testing.pytestArgs": [
-        "tests"
-    ],
-    "python.testing.unittestEnabled": false,
-    "editor.formatOnSave": true
+  },
+  "mypy-type-checker.args": [
+    "--disallow-untyped-defs"
+  ],
+  "python.testing.pytestEnabled": true,
+  "python.testing.pytestArgs": [
+    "tests"
+  ],
+  "python.testing.unittestEnabled": false,
+  "editor.formatOnSave": true
 }
