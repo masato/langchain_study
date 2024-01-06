@@ -27,7 +27,7 @@ async def on_message(message: cl.Message) -> None:
             "input": message.content,
         },
         {
-            "output": str(result.content),
+            "output": f"{result.content}",
         },
     )
-    await cl.Message(content=str(result.content)).send()
+    await cl.Message(content=f"{result.content}").send()

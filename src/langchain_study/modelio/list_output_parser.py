@@ -13,6 +13,6 @@ result = chat.invoke(
     ],
 )
 
-output = output_parser.parse(str(result.content))
+output = output_parser.parse(f"{result.content}")
 for item in output:
     print(f"代表的な製品 : {item}")

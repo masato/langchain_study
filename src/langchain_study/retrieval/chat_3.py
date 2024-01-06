@@ -73,4 +73,4 @@ async def on_message(input_message: cl.Message) -> None:
     result = chain.invoke(
         {"document": documents_string, "query": input_message.content},
     )
-    await cl.Message(content=str(result)).send()
+    await cl.Message(content=result).send()

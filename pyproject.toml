@@ -25,6 +25,7 @@ chainlit = "0.7.700"
 langchain-community = "0.0.9"
 wikipedia = "1.4.0"
 langchain-openai = "0.0.2"
+redis = "5.0.1"
 
 
 [tool.poetry.group.dev.dependencies]

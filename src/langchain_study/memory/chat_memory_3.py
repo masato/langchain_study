@@ -1,11 +1,27 @@
+import os
+import sys
+
 import chainlit as cl
 from langchain.chains import ConversationChain
-from langchain.memory import ConversationBufferMemory
+from langchain.memory import ConversationBufferMemory, RedisChatMessageHistory
 from langchain_openai import ChatOpenAI
 
 chat = ChatOpenAI(model="gpt-3.5-turbo")
 
-memory = ConversationBufferMemory(return_messages=True)
+redis_url = os.environ.get("REDIS_URL")
+
+if redis_url is None:
+    sys.exit(1)
+
+history = RedisChatMessageHistory(
+    session_id="chat_memory",
+    url=redis_url,
+)
+
+memory = ConversationBufferMemory(
+    return_messages=True,
+    chat_memory=history,
+)
 
 chain = ConversationChain(
     memory=memory,
