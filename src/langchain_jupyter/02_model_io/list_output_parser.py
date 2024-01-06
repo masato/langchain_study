@@ -10,7 +10,7 @@ result = chat(
     [
         HumanMessage(content="Appleが開発した代表的な製品を3つ教えてください。"),
         HumanMessage(content=output_parser.get_format_instructions()),
-    ]
+    ],
 )
 
 output = output_parser.parse(str(result.content))

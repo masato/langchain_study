@@ -26,7 +26,8 @@ CHAT_UPDATE_INTERVAL_SEC = 1
 load_dotenv()
 
 logging.basicConfig(
-    format="%(asctime)s [%(levelname)s] %(message)s", level=logging.INFO
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    level=logging.INFO,
 )
 
 logger = logging.getLogger(__name__)

@@ -34,7 +34,7 @@ prompt = PromptTemplate(
 chat = ChatOpenAI(model="gpt-3.5-turbo")
 
 result = chat(
-    [HumanMessage(content=prompt.format(document=documents_string, query=query))]
+    [HumanMessage(content=prompt.format(document=documents_string, query=query))],
 )
 
 print(result.content)

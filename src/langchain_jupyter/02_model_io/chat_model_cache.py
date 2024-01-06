@@ -12,7 +12,7 @@ start = time.time()
 result = chat(
     [
         HumanMessage(content="こんにちは！"),
-    ]
+    ],
 )
 end = time.time()
 print(result.content)
@@ -22,7 +22,7 @@ start = time.time()
 result = chat(
     [
         HumanMessage(content="こんにちは！"),
-    ]
+    ],
 )
 end = time.time()
 print(result.content)

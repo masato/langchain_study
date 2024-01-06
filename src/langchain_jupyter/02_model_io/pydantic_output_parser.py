@@ -9,10 +9,10 @@ chat = ChatOpenAI()
 class Smartphone(BaseModel):
     release_date: str = Field(..., description="スマートフォンの発売日")
     screen_inches: float = Field(
-        ..., description="スマートフォンの画面サイズ（インチ）"
+        ..., description="スマートフォンの画面サイズ（インチ）",
     )
     os_installed: str = Field(
-        ..., description="スマートフォンにインストールされているOS"
+        ..., description="スマートフォンにインストールされているOS",
     )
     model_name: str = Field(..., description="スマートフォンのモデル名")
 
@@ -24,7 +24,7 @@ class Smartphone(BaseModel):
 
 
 parser = OutputFixingParser.from_llm(
-    llm=chat, parser=PydanticOutputParser(pydantic_object=Smartphone)
+    llm=chat, parser=PydanticOutputParser(pydantic_object=Smartphone),
 )
 
 
@@ -32,7 +32,7 @@ result = chat(
     [
         HumanMessage(content="Android でリリースされたスマートフォンを 1 個挙げて"),
         HumanMessage(content=parser.get_format_instructions()),
-    ]
+    ],
 )
 
 parsed_result = parser.invoke(result)

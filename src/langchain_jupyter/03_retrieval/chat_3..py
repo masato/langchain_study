@@ -12,13 +12,13 @@ from langchain_community.vectorstores import Chroma
 
 embeddings = OpenAIEmbeddings(model="text-embedding-ada-002")
 
-model = ChatOpenAI(model="gpt-3.5-turbo")
+llm = ChatOpenAI(model="gpt-3.5-turbo")
 
 prompt = ChatPromptTemplate.from_messages(
     [
         ("system", "文章を元に質問に答えてください。\n\n文章: {document}"),
         ("human", "質問: {query}"),
-    ]
+    ],
 )
 
 text_splitter = SpacyTextSplitter(chunk_size=1000, pipeline="ja_core_news_sm")
@@ -54,7 +54,7 @@ async def on_chat_start() -> None:
     cl.user_session.set("database", database)
 
     await cl.Message(
-        content=f"`{file.name}` の読み込みが完了しました。質問を入力してください。"
+        content=f"`{file.name}` の読み込みが完了しました。質問を入力してください。",
     ).send()
 
 
@@ -72,8 +72,8 @@ async def on_message(input_message: Message) -> None:
     {document.page_content}
     """
 
-    chain = prompt | model | StrOutputParser()
+    chain = prompt | llm | StrOutputParser()
     result = chain.invoke(
-        {"document": documents_string, "query": input_message.content}
+        {"document": documents_string, "query": input_message.content},
     )
     await cl.Message(content=str(result)).send()

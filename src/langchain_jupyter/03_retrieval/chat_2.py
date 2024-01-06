@@ -14,7 +14,7 @@ prompt = ChatPromptTemplate.from_messages(
     [
         ("system", "文章を元に質問に答えてください。\n\n文章: {document}"),
         ("human", "質問: {query}"),
-    ]
+    ],
 )
 
 database = Chroma(persist_directory="./data", embedding_function=embeddings)
@@ -39,6 +39,6 @@ async def on_message(input_message: Message) -> None:
 
     chain = prompt | model | StrOutputParser()
     result = chain.invoke(
-        {"document": documents_string, "query": input_message.content}
+        {"document": documents_string, "query": input_message.content},
     )
     await cl.Message(content=str(result)).send()

@@ -31,9 +31,8 @@ taskipy = "1.12.2"
 mypy = "1.8.0"
 ruff = "0.1.11"
 
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+# [tool.ruff]
+# select = ["ALL"]
 
 [tool.taskipy.tasks]
 test = "pytest tests"
@@ -41,3 +40,7 @@ mypy = "mypy src tests"
 ruff = "task ruff-check && task ruff-format"
 ruff-check = "ruff check src --fix"
 ruff-format = "ruff format src"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -19,7 +19,7 @@ prompt = PromptTemplate(
 result = chat(
     [
         HumanMessage(content=prompt.format(product="iPhone")),
-    ]
+    ],
 )
 
 print(result.content)
