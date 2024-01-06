@@ -1,4 +1,4 @@
-import os
+from pathlib import Path
 
 import chainlit as cl
 from chainlit.message import Message
@@ -39,10 +39,9 @@ async def on_chat_start() -> None:
         ).send()
     file = files[0]
 
-    if not os.path.exists("tmp"):
-        os.mkdir("tmp")
-    with open(f"tmp/{file.name}", "wb") as f:
-        f.write(file.content)
+    if not Path("tmp").exists():
+        Path("tmp").mkdir()
+    Path(f"tmp/{file.name}").write_bytes(file.content)
 
     documemts = PyMuPDFLoader(f"tmp/{file.name}").load()
 

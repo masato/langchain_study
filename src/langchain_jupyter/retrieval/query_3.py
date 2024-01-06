@@ -13,6 +13,6 @@ retriever = database.as_retriever()
 
 qa = RetrievalQA.from_llm(llm=llm, retriever=retriever, return_source_documents=True)
 
-result = qa("飛行車の最高速度は？")
+result = qa("飛行車の最高速度は?")
 print(result["result"])
 print(result["source_documents"])

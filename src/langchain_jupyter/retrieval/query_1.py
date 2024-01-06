@@ -5,7 +5,7 @@ embeddings = OpenAIEmbeddings(model="text-embedding-ada-002")
 
 database = Chroma(persist_directory="./data", embedding_function=embeddings)
 
-documents = database.similarity_search("飛行車の最高速度は？")
+documents = database.similarity_search("飛行車の最高速度は?")
 
 print(f"ドキュメント数: {len(documents)}")
 

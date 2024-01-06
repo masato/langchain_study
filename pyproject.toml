@@ -31,8 +31,25 @@ taskipy = "1.12.2"
 mypy = "1.8.0"
 ruff = "0.1.11"
 
-# [tool.ruff]
-# select = ["ALL"]
+[tool.ruff]
+select = ["ALL"]
+
+[tool.ruff.lint.per-file-ignores]
+"**/{modelio,retrieval}/*" = [
+    "T201", # allow print
+    "D100", # allow missing-module-docstring
+    "D101", # allow missing-function-docstring
+    "D102", # allow undocumented-public-method
+    "D103", # allow undocumented-public-function
+    "D104", # allow undocumented-private-method
+]
+"notebooks/*" = [
+    "T201", # allow print
+]
+
+[tool.ruff.pep8-naming]
+# Allow Pydantic's `@validator` decorator to trigger class method treatment.
+classmethod-decorators = ["classmethod", "validator"]
 
 [tool.taskipy.tasks]
 test = "pytest tests"

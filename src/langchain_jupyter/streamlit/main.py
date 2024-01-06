@@ -1,3 +1,7 @@
+"""Streamlit for the LangChain application."""
+
+from __future__ import annotations
+
 import os
 
 from dotenv import load_dotenv
@@ -10,6 +14,8 @@ load_dotenv()
 
 
 class Journey(BaseModel):
+    """Represents a journey with belongings and route."""
+
     belongings: list[str] = Field(description="持ち物")
     route: list[str] = Field(description="ルート")
 
@@ -36,4 +42,4 @@ llm = ChatOpenAI(
 
 chain = prompt | llm | output_parser
 journey = chain.invoke({"destination": "沖縄"})
-print(journey)
+print(journey)  # noqa: T201

@@ -8,7 +8,7 @@
       "module": "streamlit",
       "args": [
         "run",
-        "src/langchain_jupyter/streamlit/streamlit_app.py",
+        "src/langchain_jupyter/streamlit/app.py",
         "--server.port",
         "8080"
       ]

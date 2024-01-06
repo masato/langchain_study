@@ -1,3 +1,6 @@
+"""Bolt app for Langchain."""
+from __future__ import annotations
+
 import json
 import logging
 import os
@@ -11,7 +14,7 @@ from langchain.callbacks.base import BaseCallbackHandler
 from langchain.chat_models import ChatOpenAI
 from langchain.memory import MomentoChatMessageHistory
 from langchain.schema import BaseMessage, HumanMessage, LLMResult, SystemMessage
-from slack_bolt import App, BoltContext, Say
+from slack_bolt import Ack, App, BoltContext, Say
 from slack_bolt.adapter.aws_lambda import SlackRequestHandler
 from slack_bolt.adapter.socket_mode import SocketModeHandler
 from slack_sdk.models.blocks import (
@@ -40,17 +43,51 @@ app = App(
 
 
 class SlackStreamingCallbackHandler(BaseCallbackHandler):
+    """Callback handler for Slack streaming."""
+
     last_send_time = time.time()
     message = ""
 
-    def __init__(self, channel: str, ts: str) -> None:
+    def __init__(self: SlackStreamingCallbackHandler, channel: str, ts: str) -> None:
+        """Initialize the SlackStreamingCallbackHandler.
+
+        Parameters
+        ----------
+        channel : str
+            The channel to send updates to.
+        ts : str
+            The timestamp of the message to update.
+
+        Returns
+        -------
+        None
+            This is a constructor method and does not return anything.
+        """
         self.channel = channel
         self.ts = ts
         self.interval = CHAT_UPDATE_INTERVAL_SEC
         # 投稿を更新した累計回数カウンタ
         self.update_count = 0
 
-    def on_llm_new_token(self, token: str, **kwargs: Any) -> None:
+    def on_llm_new_token(
+        self: SlackStreamingCallbackHandler,
+        token: str,
+        **kwargs: Any,  # noqa: ANN401 ARG002
+    ) -> None:
+        """Handle the new token received during the LLM process.
+
+        Parameters
+        ----------
+        token : str
+            The new token received.
+        kwargs : Any
+            Additional keyword arguments.
+
+        Returns
+        -------
+        None
+            Nothing to return.
+        """
         self.message += token
 
         now = time.time()
@@ -68,8 +105,29 @@ class SlackStreamingCallbackHandler(BaseCallbackHandler):
             if self.update_count / 10 > self.interval:
                 self.interval = self.interval * 2
 
-    def on_llm_end(self, response: LLMResult, **kwargs: Any) -> None:
-        message_context = "OpenAI APIで生成される情報は不正確または不適切な場合がありますが、当社の見解を述べるものではありません。"
+    def on_llm_end(
+        self: SlackStreamingCallbackHandler,
+        response: LLMResult,  # noqa: ARG002
+        **kwargs: Any,  # noqa: ANN401 ARG002
+    ) -> None:
+        """Handle the end of the LLM process.
+
+        Parameters
+        ----------
+        response : LLMResult
+            The response from the LLM process.
+        kwargs : Any
+            Additional keyword arguments.
+
+        Returns
+        -------
+        None
+            Nothing to return.
+        """
+        message_context = (
+            "OpenAI APIで生成される情報は不正確または不適切な場合がありますが、"
+            "当社の見解を述べるものではありません。"
+        )
         message_blocks = [
             SectionBlock(text=MarkdownTextObject(text=self.message)),
             DividerBlock(),
@@ -86,17 +144,31 @@ class SlackStreamingCallbackHandler(BaseCallbackHandler):
 
 # @app.event("app_mention")
 def handle_mention(event: dict, say: Say) -> None:
+    """Handle mention event.
+
+    Parameters
+    ----------
+    event : dict
+        The mention event data.
+    say : Say
+        The say function to send a message.
+
+    Returns
+    -------
+    None
+        This function does not return anything.
+    """
     channel = event["channel"]
     thread_ts = event["ts"]
     message = re.sub(r"<@.*>", "", event["text"])
 
-    # 投稿のキー(=Momentoキー)：初回=event["ts"],2回目以降=event["thread_ts"]
+    # 投稿のキー(=Momentoキー):初回=event["ts"],2回目以降=event["thread_ts"]
     id_ts = event["ts"]
     if "thread_ts" in event:
         id_ts = event["thread_ts"]
 
     result = say("\n\nTyping...", thread_ts=thread_ts)
-    ts = result["ts"]
+    ts = str(result["ts"])
 
     history = MomentoChatMessageHistory.from_client_params(
         session_id=id_ts,
@@ -124,17 +196,40 @@ def handle_mention(event: dict, say: Say) -> None:
     history.add_message(ai_message)
 
 
-def just_ack(ack: Any) -> None:
+def just_ack(ack: Ack) -> None:
+    """Acknowledge the event.
+
+    Parameters
+    ----------
+    ack : Ack
+        The ack function.
+
+    Returns
+    -------
+    None
+        This function does not return anything.
+    """
     ack()
 
 
 app.event("app_mention")(ack=just_ack, lazy=[handle_mention])
 
-if __name__ == "__main__":
-    SocketModeHandler(app, os.environ["SLACK_APP_TOKEN"]).start()
-
 
 def handler(event: dict, context: BoltContext) -> dict[str, Any]:
+    """Handle the event and return a dictionary.
+
+    Parameters
+    ----------
+    event : dict
+        The event data.
+    context : BoltContext
+        The Bolt context.
+
+    Returns
+    -------
+    dict[str, Any]
+        The dictionary containing the response.
+    """
     logger.info("handler called")
     header = event["headers"]
     logger.info(json.dumps(header))
@@ -145,3 +240,7 @@ def handler(event: dict, context: BoltContext) -> dict[str, Any]:
 
     slack_handler = SlackRequestHandler(app=app)
     return slack_handler.handle(event, context)
+
+
+if __name__ == "__main__":
+    SocketModeHandler(app, os.environ["SLACK_APP_TOKEN"]).start()

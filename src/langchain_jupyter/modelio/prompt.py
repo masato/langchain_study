@@ -1,7 +1,7 @@
 from langchain import PromptTemplate
 
 prompt = PromptTemplate(
-    template="{product}はどこの会社が開発した製品ですか？",
+    template="{product}はどこの会社が開発した製品ですか?",
     input_variables=[
         "product",
     ],
