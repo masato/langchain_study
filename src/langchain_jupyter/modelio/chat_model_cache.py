@@ -1,15 +1,15 @@
 import time
 
 from langchain.cache import InMemoryCache
-from langchain.chat_models import ChatOpenAI
 from langchain.globals import set_llm_cache
 from langchain.schema import HumanMessage
+from langchain_openai import ChatOpenAI
 
 set_llm_cache(InMemoryCache())
 chat = ChatOpenAI()
 
 start = time.time()
-result = chat(
+result = chat.invoke(
     [
         HumanMessage(content="こんにちは!"),
     ],
@@ -19,7 +19,7 @@ print(result.content)
 print(f"処理時間: {end - start}秒")
 
 start = time.time()
-result = chat(
+result = chat.invoke(
     [
         HumanMessage(content="こんにちは!"),
     ],

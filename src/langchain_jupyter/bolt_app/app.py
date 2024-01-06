@@ -11,9 +11,9 @@ from typing import Any
 
 from dotenv import load_dotenv
 from langchain.callbacks.base import BaseCallbackHandler
-from langchain.chat_models import ChatOpenAI
 from langchain.memory import MomentoChatMessageHistory
 from langchain.schema import BaseMessage, HumanMessage, LLMResult, SystemMessage
+from langchain_openai import ChatOpenAI
 from slack_bolt import Ack, App, BoltContext, Say
 from slack_bolt.adapter.aws_lambda import SlackRequestHandler
 from slack_bolt.adapter.socket_mode import SocketModeHandler

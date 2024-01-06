@@ -1,5 +1,5 @@
-from langchain.document_loaders import PyMuPDFLoader
 from langchain.text_splitter import SpacyTextSplitter
+from langchain_community.document_loaders import PyMuPDFLoader
 
 loader = PyMuPDFLoader("./sample.pdf")
 documents = loader.load()

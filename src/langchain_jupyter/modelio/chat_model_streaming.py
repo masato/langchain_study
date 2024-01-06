@@ -1,6 +1,6 @@
 from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
-from langchain.chat_models import ChatOpenAI
 from langchain.schema import HumanMessage
+from langchain_openai import ChatOpenAI
 
 chat = ChatOpenAI(
     streaming=True,
@@ -9,7 +9,7 @@ chat = ChatOpenAI(
     ],
 )
 
-resp = chat(
+resp = chat.invoke(
     [
         HumanMessage(content="おいしいステーキの焼き方を教えて"),
     ],

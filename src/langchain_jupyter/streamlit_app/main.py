@@ -8,7 +8,7 @@ import sys
 from dotenv import load_dotenv
 from langchain.output_parsers import PydanticOutputParser
 from langchain.prompts import PromptTemplate
-from langchain_community.chat_models import ChatOpenAI
+from langchain_openai import ChatOpenAI
 from pydantic.v1 import BaseModel, Field
 
 load_dotenv()

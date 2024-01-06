@@ -1,4 +1,4 @@
-from langchain.llms import OpenAI
+from langchain_community.llms import OpenAI
 
 llm = OpenAI(model="gpt-3.5-turbo-instruct")
 
