@@ -12,6 +12,6 @@ chat = ChatOpenAI(
 resp = chat(
     [
         HumanMessage(content="おいしいステーキの焼き方を教えて"),
-    ]
+    ],
 )
 print(resp.content)

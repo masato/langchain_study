@@ -1,21 +1,41 @@
+"""Streamlit app for Langchain."""
+from __future__ import annotations
+
 import os
+import sys
+from typing import TYPE_CHECKING
 
 import streamlit as st
 from dotenv import load_dotenv
 from langchain.agents import AgentType, initialize_agent, load_tools
-from langchain.agents.agent import AgentExecutor
 from langchain.callbacks import StreamlitCallbackHandler
-from langchain.chat_models import ChatOpenAI
 from langchain.memory import ConversationBufferMemory
 from langchain.prompts import MessagesPlaceholder
+from langchain_community.chat_models import ChatOpenAI
+
+if TYPE_CHECKING:
+    from langchain.agents.agent import AgentExecutor
 
 load_dotenv()
 
 
 def create_agent_chain() -> AgentExecutor:
+    """Create and initialize an agent chain for Langchain.
+
+    Returns
+    -------
+        AgentExecutor: The initialized agent chain.
+    """
+    model = os.environ.get("OPENAI_API_MODEL")
+    temperature = os.environ.get("OPENAI_API_TEMPERATURE")
+
+    if model is None or temperature is None:
+        # Handle the error or provide default values
+        sys.exit(1)
+
     chat = ChatOpenAI(
-        model=os.environ["OPENAI_API_MODEL"],
-        temperature=float(os.environ["OPENAI_API_TEMPERATURE"]),
+        model=model,
+        temperature=float(temperature),
         streaming=True,
     )
 
@@ -34,9 +54,10 @@ def create_agent_chain() -> AgentExecutor:
     )
 
 
+st.title("langchain-streamlit-app")
+
 if "agent_chain" not in st.session_state:
     st.session_state.agent_chain = create_agent_chain()
-
 
 st.title("langchain-streamlit-app")
 

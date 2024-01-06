@@ -3,9 +3,9 @@ from langchain.prompts import FewShotPromptTemplate, PromptTemplate
 
 examples = [
     {
-        "input": "LangChainはChatGPT・Large Language Model (LLM) の実利用をより柔軟に簡易に行うためのツール群です",
-        "output": "LangChainは、ChatGPT・Large Language Model (LLM) の実利用をより柔軟に、簡易に行うためのツール群です。",
-    }
+        "input": "LangChainはChatGPT・Large Language Model (LLM) の実利用をより柔軟に簡易に行うためのツール群です",  # noqa: E501
+        "output": "LangChainは、ChatGPT・Large Language Model (LLM) の実利用をより柔軟に、簡易に行うためのツール群です。",  # noqa: E501
+    },
 ]
 
 prompt = PromptTemplate(
@@ -23,7 +23,7 @@ few_shot_prompt = FewShotPromptTemplate(
 
 llm = OpenAI()
 formatted_prompt = few_shot_prompt.format(
-    input_string="私はさまざまな機能がモジュールとして提供されているLangChainを使ってアプリケーションを開発しています"
+    input_string="私はさまざまな機能がモジュールとして提供されているLangChainを使ってアプリケーションを開発しています",
 )
 
 result = llm.predict(formatted_prompt)

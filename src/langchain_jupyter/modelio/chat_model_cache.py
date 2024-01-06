@@ -11,8 +11,8 @@ chat = ChatOpenAI()
 start = time.time()
 result = chat(
     [
-        HumanMessage(content="こんにちは！"),
-    ]
+        HumanMessage(content="こんにちは!"),
+    ],
 )
 end = time.time()
 print(result.content)
@@ -21,8 +21,8 @@ print(f"処理時間: {end - start}秒")
 start = time.time()
 result = chat(
     [
-        HumanMessage(content="こんにちは！"),
-    ]
+        HumanMessage(content="こんにちは!"),
+    ],
 )
 end = time.time()
 print(result.content)

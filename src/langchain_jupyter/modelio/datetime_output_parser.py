@@ -13,7 +13,7 @@ result = chat(
     [
         HumanMessage(content=prompt.format(product="iPhone8")),
         HumanMessage(content=output_parser.get_format_instructions()),
-    ]
+    ],
 )
 
 output = output_parser.invoke(result)
