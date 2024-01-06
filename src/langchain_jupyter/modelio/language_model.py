@@ -1,7 +1,7 @@
 from dotenv import load_dotenv
-from langchain.chat_models import ChatOpenAI
 from langchain.prompts import PromptTemplate
 from langchain.schema import HumanMessage
+from langchain_openai import ChatOpenAI
 
 load_dotenv()
 
@@ -16,7 +16,7 @@ prompt = PromptTemplate(
     ],
 )
 
-result = chat(
+result = chat.invoke(
     [
         HumanMessage(content=prompt.format(product="iPhone")),
     ],

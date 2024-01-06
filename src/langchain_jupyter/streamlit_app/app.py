@@ -11,7 +11,7 @@ from langchain.agents import AgentType, initialize_agent, load_tools
 from langchain.callbacks import StreamlitCallbackHandler
 from langchain.memory import ConversationBufferMemory
 from langchain.prompts import MessagesPlaceholder
-from langchain_community.chat_models import ChatOpenAI
+from langchain_openai import ChatOpenAI
 
 if TYPE_CHECKING:
     from langchain.agents.agent import AgentExecutor

@@ -1,6 +1,6 @@
-from langchain.chat_models import ChatOpenAI
 from langchain.output_parsers import OutputFixingParser, PydanticOutputParser
 from langchain.schema import HumanMessage
+from langchain_openai import ChatOpenAI
 from pydantic.v1 import BaseModel, Field, validator
 
 chat = ChatOpenAI()
@@ -32,7 +32,7 @@ parser = OutputFixingParser.from_llm(
 )
 
 
-result = chat(
+result = chat.invoke(
     [
         HumanMessage(content="Android でリリースされたスマートフォンを 1 個挙げて"),
         HumanMessage(content=parser.get_format_instructions()),

@@ -1,10 +1,9 @@
 import chainlit as cl
 from chainlit.message import Message
-from langchain.chat_models import ChatOpenAI
-from langchain.embeddings import OpenAIEmbeddings
 from langchain.prompts import ChatPromptTemplate
 from langchain.schema import StrOutputParser
 from langchain_community.vectorstores import Chroma
+from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 
 embeddings = OpenAIEmbeddings(model="text-embedding-ada-002")
 

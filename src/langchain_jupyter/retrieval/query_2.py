@@ -1,8 +1,7 @@
-from langchain.chat_models import ChatOpenAI
-from langchain.embeddings import OpenAIEmbeddings
 from langchain.prompts import PromptTemplate
 from langchain.schema import HumanMessage
 from langchain_community.vectorstores import Chroma
+from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 
 embeddings = OpenAIEmbeddings(model="text-embedding-ada-002")
 
@@ -33,7 +32,7 @@ prompt = PromptTemplate(
 
 chat = ChatOpenAI(model="gpt-3.5-turbo")
 
-result = chat(
+result = chat.invoke(
     [HumanMessage(content=prompt.format(document=documents_string, query=query))],
 )
 
