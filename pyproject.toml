@@ -31,11 +31,6 @@ taskipy = "1.12.2"
 mypy = "1.8.0"
 ruff = "0.1.11"
 
-[tool.mypy]
-ignore_missing_imports = true
-check_untyped_defs = true
-implicit_reexport = true
-
 [tool.ruff]
 select = ["ALL"]
 
