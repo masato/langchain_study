@@ -3,11 +3,12 @@
 from __future__ import annotations
 
 import os
+import sys
 
 from dotenv import load_dotenv
-from langchain.chat_models import ChatOpenAI
 from langchain.output_parsers import PydanticOutputParser
 from langchain.prompts import PromptTemplate
+from langchain_community.chat_models import ChatOpenAI
 from pydantic.v1 import BaseModel, Field
 
 load_dotenv()
@@ -35,9 +36,16 @@ prompt = PromptTemplate(
     partial_variables={"format_instructions": output_parser.get_format_instructions()},
 )
 
+model = os.environ.get("OPENAI_API_MODEL")
+temperature = os.environ.get("OPENAI_API_TEMPERATURE")
+
+if model is None or temperature is None:
+    # Handle the error or provide default values
+    sys.exit(1)
+
 llm = ChatOpenAI(
-    model=os.environ["OPENAI_API_MODEL"],
-    temperature=float(os.environ["OPENAI_API_TEMPERATURE"]),
+    model=model,
+    temperature=float(temperature),
 )
 
 chain = prompt | llm | output_parser

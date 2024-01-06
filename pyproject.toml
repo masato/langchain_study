@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{ include = "langchain_jupyter", from = "src" }]
 
 [tool.poetry.dependencies]
-python = "3.12.1"
+python = "3.11.7"
 notebook = "7.0.6"
 python-dotenv = "1.0.0"
 openai = "1.6.1"
@@ -30,6 +30,11 @@ pytest = "7.4.4"
 taskipy = "1.12.2"
 mypy = "1.8.0"
 ruff = "0.1.11"
+
+[tool.mypy]
+ignore_missing_imports = true
+check_untyped_defs = true
+implicit_reexport = true
 
 [tool.ruff]
 select = ["ALL"]

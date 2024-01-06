@@ -8,7 +8,7 @@
       "module": "streamlit",
       "args": [
         "run",
-        "src/langchain_jupyter/streamlit/app.py",
+        "src/langchain_jupyter/streamlit_app/app.py",
         "--server.port",
         "8080"
       ]
@@ -20,7 +20,7 @@
       "module": "chainlit",
       "args": [
         "run",
-        "src/langchain_jupyter/03_retrieval/chat_1.py",
+        "src/langchain_jupyter/retrieval/chat_1.py",
         "--port",
         "8090"
       ]
