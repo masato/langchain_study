@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "langchain_jupyter"
+name = "langchain_study"
 version = "0.1.0"
 description = ""
 authors = ["Masato Shimizu <ma6ato@gmail.com>"]
 readme = "README.md"
-packages = [{ include = "langchain_jupyter", from = "src" }]
+packages = [{ include = "langchain_study", from = "src" }]
 
 [tool.poetry.dependencies]
 python = "3.11.7"
