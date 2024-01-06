@@ -33,7 +33,15 @@ taskipy = "1.12.2"
 mypy = "1.8.0"
 ruff = "0.1.11"
 
+[tool.mypy]
+python_version = "3.11"
+
+[[tool.mypy.overrides]]
+module = "wikipedia.*"
+ignore_missing_imports = true
+
 [tool.ruff]
+target-version = "py311"
 select = ["ALL"]
 
 [tool.ruff.lint.per-file-ignores]
@@ -50,7 +58,6 @@ select = ["ALL"]
 ]
 
 [tool.ruff.pep8-naming]
-# Allow Pydantic's `@validator` decorator to trigger class method treatment.
 classmethod-decorators = ["classmethod", "validator"]
 
 [tool.taskipy.tasks]

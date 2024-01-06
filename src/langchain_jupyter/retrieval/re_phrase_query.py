@@ -1,9 +1,15 @@
-from langchain import LLMChain
+import wikipedia
+from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
-from langchain.retrievers import RePhraseQueryRetriever, WikipediaRetriever
+from langchain.retrievers import RePhraseQueryRetriever
+from langchain_community.retrievers import WikipediaRetriever
 from langchain_openai import ChatOpenAI
 
-retriever = WikipediaRetriever(lang="ja", doc_content_chars_max=500)
+retriever = WikipediaRetriever(
+    wiki_client=wikipedia,
+    lang="ja",
+    doc_content_chars_max=500,
+)
 
 llm_chain = LLMChain(
     llm=ChatOpenAI(temperature=0),
@@ -15,13 +21,13 @@ llm_chain = LLMChain(
     ),
 )
 
-re_phrase_query_retriever = RePhraseQueryRetriever(
-    llm_chain=llm_chain,
+retriever_from_llm_chain = RePhraseQueryRetriever(
     retriever=retriever,
+    llm_chain=llm_chain,
 )
 
-documents = re_phrase_query_retriever.get_relevant_documents(
+docs = retriever_from_llm_chain.get_relevant_documents(
     "私はラーメンが好きです。ところでバーボンウイスキーとは何ですか?",
 )
 
-print(documents)
+print(docs)
