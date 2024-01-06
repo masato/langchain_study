@@ -1,7 +1,6 @@
 from pathlib import Path
 
 import chainlit as cl
-from chainlit.message import Message
 from langchain.prompts import ChatPromptTemplate
 from langchain.schema import StrOutputParser
 from langchain.text_splitter import SpacyTextSplitter
@@ -57,7 +56,7 @@ async def on_chat_start() -> None:
 
 
 @cl.on_message
-async def on_message(input_message: Message) -> None:
+async def on_message(input_message: cl.Message) -> None:
     database = cl.user_session.get("database")  # type: Chroma
 
     documents = database.similarity_search(input_message.content)

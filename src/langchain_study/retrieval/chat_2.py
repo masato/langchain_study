@@ -1,5 +1,4 @@
 import chainlit as cl
-from chainlit.message import Message
 from langchain.prompts import ChatPromptTemplate
 from langchain.schema import StrOutputParser
 from langchain_community.vectorstores import Chroma
@@ -25,7 +24,7 @@ async def on_chat_start() -> None:
 
 
 @cl.on_message
-async def on_message(input_message: Message) -> None:
+async def on_message(input_message: cl.Message) -> None:
     documents = database.similarity_search(input_message.content)
 
     documents_string = ""

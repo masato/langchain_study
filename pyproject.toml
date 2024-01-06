@@ -46,13 +46,14 @@ target-version = "py311"
 select = ["ALL"]
 
 [tool.ruff.lint.per-file-ignores]
-"**/{modelio,retrieval}/*" = [
+"**/{modelio,retrieval,memory}/*" = [
     "T201", # allow print
     "D100", # allow missing-module-docstring
     "D101", # allow missing-function-docstring
     "D102", # allow undocumented-public-method
     "D103", # allow undocumented-public-function
     "D104", # allow undocumented-private-method
+    "E501", # allow line-too-long
 ]
 "notebooks/*" = [
     "T201", # allow print

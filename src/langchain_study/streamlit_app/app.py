@@ -30,7 +30,6 @@ def create_agent_chain() -> AgentExecutor:
     temperature = os.environ.get("OPENAI_API_TEMPERATURE")
 
     if model is None or temperature is None:
-        # Handle the error or provide default values
         sys.exit(1)
 
     chat = ChatOpenAI(
@@ -58,8 +57,6 @@ st.title("langchain-streamlit-app")
 
 if "agent_chain" not in st.session_state:
     st.session_state.agent_chain = create_agent_chain()
-
-st.title("langchain-streamlit-app")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
