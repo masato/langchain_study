@@ -8,9 +8,9 @@ from typing import TYPE_CHECKING
 import streamlit as st
 from dotenv import load_dotenv
 from langchain.agents import AgentType, initialize_agent, load_tools
-from langchain.callbacks import StreamlitCallbackHandler
 from langchain.memory import ConversationBufferMemory
 from langchain.prompts import MessagesPlaceholder
+from langchain_community.callbacks import StreamlitCallbackHandler
 from langchain_openai import ChatOpenAI
 
 if TYPE_CHECKING:
