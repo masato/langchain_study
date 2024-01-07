@@ -25,6 +25,8 @@ langchain-community = "0.0.9"
 wikipedia = "1.4.0"
 langchain-openai = "0.0.2"
 redis = "5.0.1"
+langchainhub = "0.1.14"
+google-search-results = "2.4.2"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -46,7 +48,7 @@ target-version = "py311"
 select = ["ALL"]
 
 [tool.ruff.lint.per-file-ignores]
-"**/{modelio,retrieval,memory,chains}/*" = [
+"**/{modelio,retrieval,memory,chains,agents,callbacks}/*" = [
     "T201", # allow print
     "D100", # allow missing-module-docstring
     "D101", # allow missing-function-docstring

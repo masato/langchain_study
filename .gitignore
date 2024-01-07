@@ -197,3 +197,7 @@ node_modules/
 # Chroma
 data/
 tmp/
+
+# Agents
+result.txt
+random.txt
