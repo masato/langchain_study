@@ -4,15 +4,23 @@ from langchain.agents import (
     create_react_agent,
     load_tools,
 )
+from langchain_community.tools.file_management import WriteFileTool
 from langchain_openai import ChatOpenAI
 
 chat = ChatOpenAI(
-    model="gpt-3.5-turbo",
     temperature=0,
+    model="gpt-3.5-turbo",
 )
 
-
-tools = load_tools(["requests_get"])
+tools = load_tools(
+    ["requests_get", "serpapi"],
+    llm=chat,
+)
+tools.append(
+    WriteFileTool(
+        root_dir="./",
+    ),
+)
 prompt = hub.pull("hwchase17/react")
 agent = create_react_agent(
     llm=chat,
@@ -28,9 +36,7 @@ agent_executor = AgentExecutor(
 
 result = agent_executor.invoke(
     {
-        "input": """以下のURLにアクセスして東京の天気を調べて日本語で答えてください。
-https://www.jma.go.jp/bosai/forecast/data/overview_forecast/130000.json
-""",
+        "input": "北海道の名産品を調べて日本語でresult.txtというファイルに保存してください。",
     },
 )
 

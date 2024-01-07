@@ -1,6 +1,9 @@
-from langchain.retrievers import WikipediaRetriever
+from langchain_community.retrievers import WikipediaRetriever
 
-retriever = WikipediaRetriever(lang="ja")
+retriever = WikipediaRetriever(
+    lang="ja",
+    wiki_client=None,
+)
 documents = retriever.get_relevant_documents("大規模言語モデル")
 
 print(f"検索結果: {len(documents)}件")
