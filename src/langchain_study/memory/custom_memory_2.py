@@ -33,5 +33,5 @@ async def on_message(message: cl.Message) -> None:
     for saved_message in messages:
         print(f"保存されているメッセージ: {saved_message.content}")
 
-    result = chain.invoke({"input": message.content})
+    result = chain.invoke(input={"input": message.content})
     await cl.Message(content=result["response"]).send()

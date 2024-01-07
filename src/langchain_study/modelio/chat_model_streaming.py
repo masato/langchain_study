@@ -1,5 +1,5 @@
-from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
-from langchain.schema import HumanMessage
+from langchain_core.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
+from langchain_core.messages import HumanMessage
 from langchain_openai import ChatOpenAI
 
 chat = ChatOpenAI(

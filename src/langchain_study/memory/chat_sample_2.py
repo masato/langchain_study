@@ -1,4 +1,4 @@
-from langchain.schema import AIMessage, HumanMessage
+from langchain_core.messages import AIMessage, HumanMessage
 from langchain_openai import ChatOpenAI
 
 chat = ChatOpenAI(model="gpt-3.5-turbo")

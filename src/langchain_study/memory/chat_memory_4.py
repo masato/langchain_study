@@ -4,7 +4,7 @@ import sys
 import chainlit as cl
 from langchain.chains import ConversationChain
 from langchain.memory import ConversationBufferMemory, RedisChatMessageHistory
-from langchain.schema import HumanMessage
+from langchain_core.messages import HumanMessage
 from langchain_openai import ChatOpenAI
 
 chat = ChatOpenAI(model="gpt-3.5-turbo")
@@ -65,5 +65,5 @@ async def on_message(message: cl.Message) -> None:
     chain = cl.user_session.get("chain")
 
     if chain is not None:
-        result = chain.invoke({"input": message.content})
+        result = chain.invoke(input={"input": message.content})
         await cl.Message(content=result["response"]).send()

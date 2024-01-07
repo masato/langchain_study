@@ -1,6 +1,6 @@
 from langchain.output_parsers import DatetimeOutputParser
-from langchain.prompts import PromptTemplate
-from langchain.schema import HumanMessage
+from langchain_core.messages import HumanMessage
+from langchain_core.prompts import PromptTemplate
 from langchain_openai import ChatOpenAI
 
 output_parser = DatetimeOutputParser()
