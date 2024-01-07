@@ -8,10 +8,7 @@ chat = ChatOpenAI(
 )
 
 tools = load_tools(
-    [
-        "requests_get",
-        "serpapi",
-    ],
+    ["requests_get", "serpapi"],
     llm=chat,
 )
 
