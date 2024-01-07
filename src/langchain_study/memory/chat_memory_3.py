@@ -38,5 +38,5 @@ async def on_chat_start() -> None:
 
 @cl.on_message
 async def on_message(message: cl.Message) -> None:
-    result = chain.invoke({"input": message.content})
+    result = chain.invoke(input={"input": message.content})
     await cl.Message(content=result["response"]).send()

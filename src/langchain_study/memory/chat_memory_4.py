@@ -65,5 +65,5 @@ async def on_message(message: cl.Message) -> None:
     chain = cl.user_session.get("chain")
 
     if chain is not None:
-        result = chain.invoke({"input": message.content})
+        result = chain.invoke(input={"input": message.content})
         await cl.Message(content=result["response"]).send()

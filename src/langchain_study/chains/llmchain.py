@@ -16,6 +16,6 @@ chain = LLMChain(
     prompt=prompt,
 )
 
-result = chain.predict(product="iPhone")
+result = chain.invoke(input={"product": "iPhone"})
 
 print(result)
