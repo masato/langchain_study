@@ -1,8 +1,8 @@
-from langchain.chains import LLMChain
+from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import PromptTemplate
 from langchain_openai import ChatOpenAI
 
-chat = ChatOpenAI(
+model = ChatOpenAI(
     model="gpt-3.5-turbo",
 )
 
@@ -11,12 +11,7 @@ prompt = PromptTemplate(
     input_variables=["product"],
 )
 
-chain = LLMChain(
-    llm=chat,
-    prompt=prompt,
-    verbose=True,
-)
-
-result = chain.invoke(input={"product": "iPhone"})
+chain = prompt | model | StrOutputParser()
+result = chain.invoke({"product": "iPhone"})
 
 print(result)
