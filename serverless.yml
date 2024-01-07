@@ -1,4 +1,4 @@
-service: langchain-bolt
+service: langchain-study
 frameworkVersion: "3"
 
 provider:
@@ -22,8 +22,8 @@ package:
 
 functions:
   app:
-    name: langchain-bolt-${sls:stage}-app
-    handler: langchain_bolt.app.handler
+    name: langchain-study-${sls:stage}-app
+    handler: langchain_study.app.handler
     memorySize: 512
     timeout: 900
     url: true

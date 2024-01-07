@@ -3,8 +3,8 @@ from langchain_community.llms import OpenAI
 
 examples = [
     {
-        "input": "LangChainはChatGPT・Large Language Model (LLM) の実利用をより柔軟に簡易に行うためのツール群です",  # noqa: E501
-        "output": "LangChainは、ChatGPT・Large Language Model (LLM) の実利用をより柔軟に、簡易に行うためのツール群です。",  # noqa: E501
+        "input": "LangChainはChatGPT・Large Language Model (LLM) の実利用をより柔軟に簡易に行うためのツール群です",
+        "output": "LangChainは、ChatGPT・Large Language Model (LLM) の実利用をより柔軟に、簡易に行うためのツール群です。",
     },
 ]
 
