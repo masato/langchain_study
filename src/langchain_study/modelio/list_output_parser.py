@@ -1,5 +1,5 @@
-from langchain.output_parsers import CommaSeparatedListOutputParser
-from langchain.schema import HumanMessage
+from langchain_core.messages import HumanMessage
+from langchain_core.output_parsers import CommaSeparatedListOutputParser
 from langchain_openai import ChatOpenAI
 
 output_parser = CommaSeparatedListOutputParser()

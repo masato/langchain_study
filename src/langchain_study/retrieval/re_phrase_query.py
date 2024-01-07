@@ -1,8 +1,8 @@
 import wikipedia
 from langchain.chains import LLMChain
-from langchain.prompts import PromptTemplate
 from langchain.retrievers import RePhraseQueryRetriever
 from langchain_community.retrievers import WikipediaRetriever
+from langchain_core.prompts import PromptTemplate
 from langchain_openai import ChatOpenAI
 
 retriever = WikipediaRetriever(

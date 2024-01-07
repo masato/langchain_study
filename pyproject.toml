@@ -47,7 +47,7 @@ target-version = "py311"
 select = ["ALL"]
 
 [tool.ruff.lint.per-file-ignores]
-"**/{modelio,retrieval,memory}/*" = [
+"**/{modelio,retrieval,memory,chains}/*" = [
     "T201", # allow print
     "D100", # allow missing-module-docstring
     "D101", # allow missing-function-docstring

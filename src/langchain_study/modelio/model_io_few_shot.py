@@ -1,5 +1,5 @@
-from langchain.prompts import FewShotPromptTemplate, PromptTemplate
 from langchain_community.llms import OpenAI
+from langchain_core.prompts import FewShotPromptTemplate, PromptTemplate
 
 examples = [
     {

@@ -7,12 +7,12 @@ import os
 import re
 import time
 from datetime import timedelta
-from typing import Any
+from typing import TYPE_CHECKING, Any
 
 from dotenv import load_dotenv
 from langchain.callbacks.base import BaseCallbackHandler
 from langchain.memory import MomentoChatMessageHistory
-from langchain.schema import BaseMessage, HumanMessage, LLMResult, SystemMessage
+from langchain_core.messages import BaseMessage, HumanMessage, SystemMessage
 from langchain_openai import ChatOpenAI
 from slack_bolt import Ack, App, BoltContext, Say
 from slack_bolt.adapter.aws_lambda import SlackRequestHandler
@@ -23,6 +23,10 @@ from slack_sdk.models.blocks import (
     MarkdownTextObject,
     SectionBlock,
 )
+
+if TYPE_CHECKING:
+    from langchain_core.outputs.llm_result import LLMResult
+
 
 CHAT_UPDATE_INTERVAL_SEC = 1
 

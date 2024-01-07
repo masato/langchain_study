@@ -1,6 +1,6 @@
-from langchain.prompts import PromptTemplate
-from langchain.schema import HumanMessage
 from langchain_community.vectorstores import Chroma
+from langchain_core.messages import HumanMessage
+from langchain_core.prompts import PromptTemplate
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 
 embeddings = OpenAIEmbeddings(model="text-embedding-ada-002")

@@ -1,11 +1,11 @@
 from pathlib import Path
 
 import chainlit as cl
-from langchain.prompts import ChatPromptTemplate
-from langchain.schema import StrOutputParser
 from langchain.text_splitter import SpacyTextSplitter
 from langchain_community.document_loaders import PyMuPDFLoader
 from langchain_community.vectorstores import Chroma
+from langchain_core.output_parsers import StrOutputParser
+from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 
 embeddings = OpenAIEmbeddings(model="text-embedding-ada-002")

@@ -1,5 +1,5 @@
 from langchain.output_parsers import OutputFixingParser, PydanticOutputParser
-from langchain.schema import HumanMessage
+from langchain_core.messages import HumanMessage
 from langchain_openai import ChatOpenAI
 from pydantic.v1 import BaseModel, Field, validator
 

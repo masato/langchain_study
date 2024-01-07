@@ -1,6 +1,6 @@
 import chainlit as cl
 from langchain.memory import ConversationBufferMemory
-from langchain.schema import HumanMessage
+from langchain_core.messages import HumanMessage
 from langchain_openai import ChatOpenAI
 
 chat = ChatOpenAI(model="gpt-3.5-turbo")
