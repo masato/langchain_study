@@ -1,7 +1,7 @@
 from langchain.agents import AgentType, initialize_agent
 from langchain.agents.agent_toolkits import create_retriever_tool
 from langchain_community.retrievers import WikipediaRetriever
-from langchain_community.tools import WriteFileTool
+from langchain_community.tools.file_management import WriteFileTool
 from langchain_core.tools import BaseTool
 from langchain_openai import ChatOpenAI
 
