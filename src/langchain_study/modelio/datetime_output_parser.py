@@ -5,7 +5,7 @@ from langchain_openai import ChatOpenAI
 
 output_parser = DatetimeOutputParser()
 
-chat = ChatOpenAI(model="gpt-3.5-turbo")
+chat = ChatOpenAI(model="gpt-3.5-turbo-1106")
 
 prompt = PromptTemplate.from_template("{product}のリリース日を教えて")
 

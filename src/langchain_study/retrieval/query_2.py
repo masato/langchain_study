@@ -30,7 +30,7 @@ prompt = PromptTemplate(
     input_variables=["document", "query"],
 )
 
-chat = ChatOpenAI(model="gpt-3.5-turbo")
+chat = ChatOpenAI(model="gpt-3.5-turbo-1106")
 
 result = chat.invoke(
     [HumanMessage(content=prompt.format(document=documents_string, query=query))],

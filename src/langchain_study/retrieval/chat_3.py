@@ -10,7 +10,7 @@ from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 
 embeddings = OpenAIEmbeddings(model="text-embedding-ada-002")
 
-llm = ChatOpenAI(model="gpt-3.5-turbo")
+llm = ChatOpenAI(model="gpt-3.5-turbo-1106")
 
 prompt = ChatPromptTemplate.from_messages(
     [

@@ -3,7 +3,7 @@ from langchain_core.prompts import PromptTemplate
 from langchain_openai import ChatOpenAI
 
 model = ChatOpenAI(
-    model="gpt-3.5-turbo",
+    model="gpt-3.5-turbo-1106",
 )
 
 prompt = PromptTemplate(

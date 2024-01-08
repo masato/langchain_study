@@ -27,6 +27,7 @@ langchain-openai = "0.0.2"
 redis = "5.0.1"
 langchainhub = "0.1.14"
 google-search-results = "2.4.2"
+faiss-cpu = "^1.7.4"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -46,6 +47,7 @@ ignore_missing_imports = true
 [tool.ruff]
 target-version = "py311"
 select = ["ALL"]
+ignore = ["T201"]
 
 [tool.ruff.lint.per-file-ignores]
 "**/{modelio,retrieval,memory,chains,agents,callbacks}/*" = [

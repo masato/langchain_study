@@ -2,7 +2,7 @@ from langchain.chains import LLMChain, SimpleSequentialChain
 from langchain_core.prompts import PromptTemplate
 from langchain_openai import ChatOpenAI
 
-chat = ChatOpenAI(model="gpt-3.5-turbo")
+chat = ChatOpenAI(model="gpt-3.5-turbo-1106")
 
 write_article_chain = LLMChain(
     llm=chat,

@@ -6,7 +6,7 @@ from langchain.chains import ConversationChain
 from langchain.memory import ConversationBufferMemory, RedisChatMessageHistory
 from langchain_openai import ChatOpenAI
 
-chat = ChatOpenAI(model="gpt-3.5-turbo")
+chat = ChatOpenAI(model="gpt-3.5-turbo-1106")
 
 redis_url = os.environ.get("REDIS_URL")
 

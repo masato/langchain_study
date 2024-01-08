@@ -1,4 +1,4 @@
-from langchain_core.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
+from langchain_core.callbacks import StreamingStdOutCallbackHandler
 from langchain_core.messages import HumanMessage
 from langchain_openai import ChatOpenAI
 
