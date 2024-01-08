@@ -1,6 +1,6 @@
 from typing import Any
 
-from langchain_core.callbacks.base import BaseCallbackHandler
+from langchain_core.callbacks import BaseCallbackHandler
 from langchain_core.messages import BaseMessage, HumanMessage
 from langchain_openai import ChatOpenAI
 
@@ -27,7 +27,7 @@ class LogCallbackHandler(BaseCallbackHandler):
 
 chat = ChatOpenAI(
     temperature=0,
-    model="gpt-3.5-turbo",
+    model="gpt-3.5-turbo-1106",
     callbacks=[
         LogCallbackHandler(),
     ],

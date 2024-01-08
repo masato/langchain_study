@@ -1,7 +1,7 @@
 from langchain_core.messages import HumanMessage
 from langchain_openai import ChatOpenAI
 
-chat = ChatOpenAI(model="gpt-3.5-turbo")
+chat = ChatOpenAI(model="gpt-3.5-turbo-1106")
 
 result = chat.invoke(
     [

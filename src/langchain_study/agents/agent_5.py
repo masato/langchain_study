@@ -7,7 +7,7 @@ from langchain_openai import ChatOpenAI
 
 chat = ChatOpenAI(
     temperature=0,
-    model="gpt-3.5-turbo",
+    model="gpt-3.5-turbo-1106",
 )
 
 tools: list[BaseTool] = []

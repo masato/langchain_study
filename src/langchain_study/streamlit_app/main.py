@@ -47,4 +47,4 @@ llm = ChatOpenAI(
 
 chain = prompt | llm | output_parser
 journey = chain.invoke({"destination": "沖縄"})
-print(journey)  # noqa: T201
+print(journey)

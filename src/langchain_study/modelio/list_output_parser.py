@@ -4,7 +4,7 @@ from langchain_openai import ChatOpenAI
 
 output_parser = CommaSeparatedListOutputParser()
 
-chat = ChatOpenAI(model="gpt-3.5-turbo")
+chat = ChatOpenAI(model="gpt-3.5-turbo-1106")
 
 result = chat.invoke(
     [
