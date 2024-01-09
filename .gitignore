@@ -189,3 +189,15 @@ cython_debug/
 pyrightconfig.json
 
 # End of https://www.toptal.com/developers/gitignore/api/linux,python
+
+# Serverless
+node_modules/
+.serverless/
+
+# Chroma
+data/
+tmp/
+
+# Agents
+result.txt
+random.txt

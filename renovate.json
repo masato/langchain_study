@@ -38,12 +38,11 @@
       ]
     },
     {
-      "matchDatasources": [
-        "docker"
-      ],
       "matchPackageNames": [
         "python"
       ],
+      "matchCurrentVersion": "<=3.11",
+      "allowedVersions": "3.11.7",
       "separateMinorPatch": true,
       "minor": {
         "automerge": false
