@@ -2321,13 +2321,13 @@ text-helpers = ["chardet (>=5.1.0,<6.0.0)"]
 
 [[package]]
 name = "langchain-community"
-version = "0.0.10"
+version = "0.0.11"
 description = "Community contributed LangChain integrations."
 optional = false
 python-versions = ">=3.8.1,<4.0"
 files = [
-    {file = "langchain_community-0.0.10-py3-none-any.whl", hash = "sha256:37123ce31018bc7ad3ffda8af73c46e16d568270527a546c34e8dbce713377af"},
-    {file = "langchain_community-0.0.10.tar.gz", hash = "sha256:4d7b3510e04b80dfddace32fb5db0878e9bab7d4be7288f86112ed22dc5faf68"},
+    {file = "langchain_community-0.0.11-py3-none-any.whl", hash = "sha256:30ab1d7dbf35d0ebe684d8a1e8964e8dedd3d31a3703790436b39674cfa06f41"},
+    {file = "langchain_community-0.0.11.tar.gz", hash = "sha256:eaeaa8d63427ecf0cb32fe2f1ba4d05ad6d5ef9f7019baf21dc2dde5b1403002"},
 ]
 
 [package.dependencies]
@@ -6658,4 +6658,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "3.11.7"
-content-hash = "c517151ec92f28f25a085d1b6d138046b008b05d1d8f1af84f3a1317415e7cfd"
+content-hash = "97595b3cb00cbb55fcee319a0983cb684d55500aeee82451d21208fea13ba7a9"
