@@ -670,13 +670,13 @@ pycparser = "*"
 
 [[package]]
 name = "chainlit"
-version = "0.7.700"
+version = "1.0.0"
 description = "A faster way to build chatbot UIs."
 optional = false
-python-versions = ">=3.8.1,<3.12"
+python-versions = ">=3.8.1,<4.0.0"
 files = [
-    {file = "chainlit-0.7.700-py3-none-any.whl", hash = "sha256:a42c42e0e74ae94907ec4c7fabf4338f2f707d154c6b97c4df6f42cea162036e"},
-    {file = "chainlit-0.7.700.tar.gz", hash = "sha256:edad61d08e04f4639a5fdd015b2d5b8a6ba7f656ecb95fb5ef69443451cfeb5f"},
+    {file = "chainlit-1.0.0-py3-none-any.whl", hash = "sha256:70b5cf10da27dc5972d8fee563f1cde29694abd3e01d7da136fae32e6c7d08ab"},
+    {file = "chainlit-1.0.0.tar.gz", hash = "sha256:92fa44434d823f70d4e60428fc1a6df2493dd86d39599d0aa22155cd42401455"},
 ]
 
 [package.dependencies]
@@ -689,6 +689,7 @@ fastapi-socketio = ">=0.0.10,<0.0.11"
 filetype = ">=1.2.0,<2.0.0"
 httpx = ">=0.23.0,<0.25.0"
 lazify = ">=0.4.0,<0.5.0"
+literalai = "0.0.1"
 nest-asyncio = ">=1.5.6,<2.0.0"
 packaging = ">=23.1,<24.0"
 pydantic = ">=1,<3"
@@ -698,7 +699,7 @@ python-graphql-client = ">=0.4.3,<0.5.0"
 python-multipart = ">=0.0.6,<0.0.7"
 syncer = ">=2.0.3,<3.0.0"
 tomli = ">=2.0.1,<3.0.0"
-uptrace = ">=1.18.0,<2.0.0"
+uptrace = ">=1.22.0,<2.0.0"
 uvicorn = ">=0.23.2,<0.24.0"
 watchfiles = ">=0.20.0,<0.21.0"
 
@@ -2439,6 +2440,21 @@ files = [
     {file = "Lazify-0.4.0-py2.py3-none-any.whl", hash = "sha256:c2c17a7a33e9406897e3f66fde4cd3f84716218d580330e5af10cfe5a0cd195a"},
     {file = "Lazify-0.4.0.tar.gz", hash = "sha256:7102bfe63e56de2ab62b3bc661a7190c4056771a8624f04a8b785275c3dd1f9b"},
 ]
+
+[[package]]
+name = "literalai"
+version = "0.0.1"
+description = "An SDK for observability in Python applications"
+optional = false
+python-versions = "*"
+files = [
+    {file = "literalai-0.0.1-py3-none-any.whl", hash = "sha256:6985cd93390757d8cdc8e2757816356db1dfc45550271144debebb6dd57bc383"},
+]
+
+[package.dependencies]
+httpx = ">=0.23.0,<0.25.0"
+packaging = ">=23.0"
+pydantic = ">=1,<3"
 
 [[package]]
 name = "lxml"
@@ -6642,4 +6658,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "3.11.7"
-content-hash = "207a717a69fd600b731102bb903dd91e2d529bf246d5e51994e10db83f61d2e0"
+content-hash = "3f9c4dabc01317b9dcd33b8c21c1d89f754bed1c46124282e6860fba2ec1a79a"
