@@ -1,0 +1,29 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Streamlit",
+      "type": "python",
+      "request": "launch",
+      "module": "streamlit",
+      "args": [
+        "run",
+        "src/langchain_study/streamlit_app/app.py",
+        "--server.port",
+        "8080"
+      ]
+    },
+    {
+      "name": "Chainlit",
+      "type": "python",
+      "request": "launch",
+      "module": "chainlit",
+      "args": [
+        "run",
+        "src/langchain_study/retrieval/chat_1.py",
+        "--port",
+        "8090"
+      ]
+    }
+  ]
+}

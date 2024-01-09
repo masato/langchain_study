@@ -1,0 +1,23 @@
+{
+  "name": "langchain_study",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "deploy": "sls deploy",
+    "package": "sls package",
+    "remove": "sls remove"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "serverless": "3.38.0",
+    "serverless-dotenv-plugin": "6.0.0",
+    "serverless-plugin-lambda-insights": "2.0.0",
+    "serverless-prune-plugin": "2.0.2",
+    "serverless-python-requirements": "6.0.1"
+  }
+}

@@ -1,1 +1,1 @@
-## langchain_jupyter
+## langchain_study
