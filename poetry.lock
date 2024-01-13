@@ -1129,13 +1129,13 @@ files = [
 
 [[package]]
 name = "duckduckgo-search"
-version = "4.1.1"
+version = "4.2"
 description = "Search for words, documents, images, news, maps and text translation using the DuckDuckGo.com search engine."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "duckduckgo_search-4.1.1-py3-none-any.whl", hash = "sha256:5b3b7d8dd0192510af79597bcfa267824a3a1006030615b7f8b66e1b9f4b4cb0"},
-    {file = "duckduckgo_search-4.1.1.tar.gz", hash = "sha256:3f81872fc8cc54c0acd100f1ab3f4ba6580b696000100e56e8a7131c3963e2c8"},
+    {file = "duckduckgo_search-4.2-py3-none-any.whl", hash = "sha256:959e94f2e17868bcb595f950077923ec138d62fd0b77bfa168d3bca4a0f1f4f4"},
+    {file = "duckduckgo_search-4.2.tar.gz", hash = "sha256:55656d426a73b0b248d9a540a83e2a9c25db7b5e74df88d3604d0f33f91b13e5"},
 ]
 
 [package.dependencies]
@@ -6658,4 +6658,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "3.11.7"
-content-hash = "aca5bdf2331f8cea65eb6e7550205bf8680bc2132beb187e7d65b68e57d24151"
+content-hash = "ed20110f78a651ae53115b524ea0bca187cf923332ce2b3ae6b4decd421e9185"
