@@ -10,7 +10,7 @@ packages = [{ include = "langchain_study", from = "src" }]
 python = "3.11.7"
 notebook = "7.0.6"
 openai = "1.7.2"
-langchain = "0.1.0"
+langchain = "0.1.1"
 pymupdf = "1.23.14"
 slack-bolt = "1.18.1"
 momento = "1.16.0"
