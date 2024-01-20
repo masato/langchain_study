@@ -28,6 +28,12 @@ redis = "5.0.1"
 langchainhub = "0.1.14"
 google-search-results = "2.4.2"
 faiss-cpu = "1.7.4"
+langchain-experimental = "0.0.49"
+lancedb = "0.5.0"
+pandas = "2.2.0"
+python-dotenv = "1.0.0"
+pyarrow = "14.0.2"
+unstructured = { extras = ["local-inference"], version = "0.12.0" }
 
 
 [tool.poetry.group.dev.dependencies]
@@ -39,15 +45,15 @@ ruff = "0.1.14"
 [tool.mypy]
 python_version = "3.11"
 disallow_untyped_defs = true
-
-[[tool.mypy.overrides]]
-module = "wikipedia.*"
 ignore_missing_imports = true
 
 [tool.ruff]
 target-version = "py311"
 select = ["ALL"]
 ignore = ["T201"]
+
+[tool.ruff.flake8-annotations]
+allow-star-arg-any = true
 
 [tool.ruff.lint.per-file-ignores]
 "**/{modelio,retrieval,memory,chains,agents,callbacks}/*" = [
