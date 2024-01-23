@@ -2773,19 +2773,19 @@ text-helpers = ["chardet (>=5.1.0,<6.0.0)"]
 
 [[package]]
 name = "langchain-community"
-version = "0.0.13"
+version = "0.0.14"
 description = "Community contributed LangChain integrations."
 optional = false
 python-versions = ">=3.8.1,<4.0"
 files = [
-    {file = "langchain_community-0.0.13-py3-none-any.whl", hash = "sha256:655196e446e7f37f4882221b6f3f791d6add28ea596d521ccf6f4507386b9a13"},
-    {file = "langchain_community-0.0.13.tar.gz", hash = "sha256:cf66c6ff7fcbeb582f5e88ee00decea7fdeca5ccddda725046f28efc697c41a7"},
+    {file = "langchain_community-0.0.14-py3-none-any.whl", hash = "sha256:88b328c2a6437ede0cdb60696f8f3cc7353766c3c5698b436adfa9f13117d2a1"},
+    {file = "langchain_community-0.0.14.tar.gz", hash = "sha256:01cabb64c303d09449728b8d9378c7d5e6e6cbc05b1fd93fc6e1ff8ceb38d2f5"},
 ]
 
 [package.dependencies]
 aiohttp = ">=3.8.3,<4.0.0"
 dataclasses-json = ">=0.5.7,<0.7"
-langchain-core = ">=0.1.9,<0.2"
+langchain-core = ">=0.1.14,<0.2"
 langsmith = ">=0.0.63,<0.1.0"
 numpy = ">=1,<2"
 PyYAML = ">=5.3"
@@ -2799,13 +2799,13 @@ extended-testing = ["aiosqlite (>=0.19.0,<0.20.0)", "aleph-alpha-client (>=2.15.
 
 [[package]]
 name = "langchain-core"
-version = "0.1.13"
+version = "0.1.14"
 description = "Building applications with LLMs through composability"
 optional = false
 python-versions = ">=3.8.1,<4.0"
 files = [
-    {file = "langchain_core-0.1.13-py3-none-any.whl", hash = "sha256:da55690feed05a68ce1919254753232170b866ebaaae615f530b73c6e232444c"},
-    {file = "langchain_core-0.1.13.tar.gz", hash = "sha256:80ad9e558f2226ce620cff93b26f8e60a45facd8900acb6e1a18e9dfa769a7eb"},
+    {file = "langchain_core-0.1.14-py3-none-any.whl", hash = "sha256:c4f88ffa23200ba212b29f95933e51d6b398fcf02a40b49fc50f7fd75df50569"},
+    {file = "langchain_core-0.1.14.tar.gz", hash = "sha256:2dfd21a7442d0d3b05ae8f35a96c42983ad2dd23e3c103d1c301773d6c316c64"},
 ]
 
 [package.dependencies]
@@ -8604,4 +8604,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "3.11.7"
-content-hash = "2948b9ae981c77d1a5eec777332d2ca935e4b68b1b068145c92d176316fea52e"
+content-hash = "79d66302260f41402f1b84a18baccf6333f881c155f2c4cfda496c9443c4e8b2"
