@@ -1302,13 +1302,13 @@ test = ["covdefaults", "pytest", "pytest-cov"]
 
 [[package]]
 name = "duckduckgo-search"
-version = "4.3.2"
+version = "4.4"
 description = "Search for words, documents, images, news, maps and text translation using the DuckDuckGo.com search engine."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "duckduckgo_search-4.3.2-py3-none-any.whl", hash = "sha256:a6ac48a26ccf93f8ba4fd809ff912b5c731c362b1c33bcd268503c602ae5727c"},
-    {file = "duckduckgo_search-4.3.2.tar.gz", hash = "sha256:b01957400352fd3c75baaec22c6b71ab9131b5939bb41ee6964908d01afd6c96"},
+    {file = "duckduckgo_search-4.4-py3-none-any.whl", hash = "sha256:74ff68837332e7907e9ea134e1277afd7d77a4c368d0e7a508fc8dd9b45d2a8d"},
+    {file = "duckduckgo_search-4.4.tar.gz", hash = "sha256:56a044b2c20547bb1e5e4133d3ff6edd70cab6c99321bf03e55e0e53c3393545"},
 ]
 
 [package.dependencies]
@@ -1316,6 +1316,7 @@ click = ">=8.1.7"
 curl-cffi = ">=0.6.0b7"
 docstring-inheritance = ">=2.1.2"
 lxml = ">=4.9.3"
+nest-asyncio = ">=1.6.0"
 
 [package.extras]
 dev = ["pytest (>=7.4.2)", "ruff (>=0.1.6)"]
@@ -3746,13 +3747,13 @@ test = ["pep440", "pre-commit", "pytest", "testpath"]
 
 [[package]]
 name = "nest-asyncio"
-version = "1.5.8"
+version = "1.6.0"
 description = "Patch asyncio to allow nested event loops"
 optional = false
 python-versions = ">=3.5"
 files = [
-    {file = "nest_asyncio-1.5.8-py3-none-any.whl", hash = "sha256:accda7a339a70599cb08f9dd09a67e0c2ef8d8d6f4c07f96ab203f2ae254e48d"},
-    {file = "nest_asyncio-1.5.8.tar.gz", hash = "sha256:25aa2ca0d2a5b5531956b9e273b45cf664cae2b145101d73b86b199978d48fdb"},
+    {file = "nest_asyncio-1.6.0-py3-none-any.whl", hash = "sha256:87af6efd6b5e897c81050477ef65c62e2b2f35d51703cae01aff2905b1852e1c"},
+    {file = "nest_asyncio-1.6.0.tar.gz", hash = "sha256:6f172d5449aca15afd6c646851f4e31e02c598d553a667e38cafa997cfec55fe"},
 ]
 
 [[package]]
@@ -8620,4 +8621,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "3.11.7"
-content-hash = "7ef0b7d7645fd1d62d31ac0f3d12c48b9a3336299364dbfe1e6b769ba5118606"
+content-hash = "d8d314788935e42ee0abcaa7bb03f0b8dfb6afd69e24536a86084a76a18bf074"
