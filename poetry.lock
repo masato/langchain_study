@@ -1196,6 +1196,21 @@ marshmallow = ">=3.18.0,<4.0.0"
 typing-inspect = ">=0.4.0,<1"
 
 [[package]]
+name = "dataclasses-json-speakeasy"
+version = "0.5.11"
+description = "Easily serialize dataclasses to and from JSON."
+optional = false
+python-versions = ">=3.7,<4.0"
+files = [
+    {file = "dataclasses_json_speakeasy-0.5.11-py3-none-any.whl", hash = "sha256:ac52a069a01e8521015d682f37849bfdf056c36fa3f81497055e201fec684104"},
+    {file = "dataclasses_json_speakeasy-0.5.11.tar.gz", hash = "sha256:418a987cea2ccf4e4be662f39faa5cc79b47b147c9d1a69d6928d6a27e0c17e8"},
+]
+
+[package.dependencies]
+marshmallow = ">=3.18.0,<4.0.0"
+typing-inspect = ">=0.4.0,<1"
+
+[[package]]
 name = "debugpy"
 version = "1.8.0"
 description = "An implementation of the Debug Adapter Protocol for Python"
@@ -3221,20 +3236,6 @@ dev = ["flake8 (==6.0.0)", "flake8-bugbear (==23.7.10)", "mypy (==1.4.1)", "pre-
 docs = ["alabaster (==0.7.13)", "autodocsumm (==0.2.11)", "sphinx (==7.0.1)", "sphinx-issues (==3.0.1)", "sphinx-version-warning (==1.1.2)"]
 lint = ["flake8 (==6.0.0)", "flake8-bugbear (==23.7.10)", "mypy (==1.4.1)", "pre-commit (>=2.4,<4.0)"]
 tests = ["pytest", "pytz", "simplejson"]
-
-[[package]]
-name = "marshmallow-enum"
-version = "1.5.1"
-description = "Enum field for Marshmallow"
-optional = false
-python-versions = "*"
-files = [
-    {file = "marshmallow-enum-1.5.1.tar.gz", hash = "sha256:38e697e11f45a8e64b4a1e664000897c659b60aa57bfa18d44e226a9920b6e58"},
-    {file = "marshmallow_enum-1.5.1-py2.py3-none-any.whl", hash = "sha256:57161ab3dbfde4f57adeb12090f39592e992b9c86d206d02f6bd03ebec60f072"},
-]
-
-[package.dependencies]
-marshmallow = ">=2.0.0"
 
 [[package]]
 name = "matplotlib"
@@ -7816,13 +7817,13 @@ devenv = ["check-manifest", "pytest (>=4.3)", "pytest-cov", "pytest-mock (>=3.3)
 
 [[package]]
 name = "unstructured"
-version = "0.12.0"
+version = "0.12.3"
 description = "A library that prepares raw documents for downstream ML tasks."
 optional = false
 python-versions = ">=3.9.0,<3.12"
 files = [
-    {file = "unstructured-0.12.0-py3-none-any.whl", hash = "sha256:a79440df57cba11c056d24bc9d37ba13788edc028006a695fc6c8550d4893e30"},
-    {file = "unstructured-0.12.0.tar.gz", hash = "sha256:6390325ded3d09a91e6dd2a2c12ee597070d6a49591dbe642a14cd458538ad6b"},
+    {file = "unstructured-0.12.3-py3-none-any.whl", hash = "sha256:14d606b84eaea2283a755d559ec507a7abbe10cf5c26a18d78bccac17a816a94"},
+    {file = "unstructured-0.12.3.tar.gz", hash = "sha256:2b6c4e38f147170211df59d3d39585e834109832b9d8cd7a5e8db94b221a5a0b"},
 ]
 
 [package.dependencies]
@@ -7855,15 +7856,15 @@ rapidfuzz = "*"
 requests = "*"
 tabulate = "*"
 typing-extensions = "*"
-unstructured-client = "*"
-unstructured-inference = {version = "0.7.21", optional = true, markers = "extra == \"local-inference\""}
+unstructured-client = ">=0.15.1"
+unstructured-inference = {version = "0.7.23", optional = true, markers = "extra == \"local-inference\""}
 "unstructured.pytesseract" = {version = ">=0.3.12", optional = true, markers = "extra == \"local-inference\""}
 wrapt = "*"
 xlrd = {version = "*", optional = true, markers = "extra == \"local-inference\""}
 
 [package.extras]
 airtable = ["pyairtable"]
-all-docs = ["markdown", "msg-parser", "networkx", "onnx", "openpyxl", "pandas", "pdf2image", "pdfminer.six", "pikepdf", "pypandoc", "pypdf", "python-docx", "python-pptx (<=0.6.23)", "unstructured-inference (==0.7.21)", "unstructured.pytesseract (>=0.3.12)", "xlrd"]
+all-docs = ["markdown", "msg-parser", "networkx", "onnx", "openpyxl", "pandas", "pdf2image", "pdfminer.six", "pikepdf", "pypandoc", "pypdf", "python-docx", "python-pptx (<=0.6.23)", "unstructured-inference (==0.7.23)", "unstructured.pytesseract (>=0.3.12)", "xlrd"]
 azure = ["adlfs", "fsspec"]
 azure-cognitive-search = ["azure-search-documents"]
 bedrock = ["boto3", "langchain"]
@@ -7872,6 +7873,7 @@ box = ["boxfs", "fsspec"]
 chroma = ["chromadb"]
 confluence = ["atlassian-python-api"]
 csv = ["pandas"]
+databricks-volumes = ["databricks-sdk"]
 delta-table = ["deltalake", "fsspec"]
 discord = ["discord-py"]
 doc = ["python-docx"]
@@ -7886,9 +7888,9 @@ gitlab = ["python-gitlab"]
 google-drive = ["google-api-python-client"]
 hubspot = ["hubspot-api-client", "urllib3"]
 huggingface = ["langdetect", "sacremoses", "sentencepiece", "torch", "transformers"]
-image = ["onnx", "pdf2image", "pdfminer.six", "pikepdf", "pypdf", "unstructured-inference (==0.7.21)", "unstructured.pytesseract (>=0.3.12)"]
+image = ["onnx", "pdf2image", "pdfminer.six", "pikepdf", "pypdf", "unstructured-inference (==0.7.23)", "unstructured.pytesseract (>=0.3.12)"]
 jira = ["atlassian-python-api"]
-local-inference = ["markdown", "msg-parser", "networkx", "onnx", "openpyxl", "pandas", "pdf2image", "pdfminer.six", "pikepdf", "pypandoc", "pypdf", "python-docx", "python-pptx (<=0.6.23)", "unstructured-inference (==0.7.21)", "unstructured.pytesseract (>=0.3.12)", "xlrd"]
+local-inference = ["markdown", "msg-parser", "networkx", "onnx", "openpyxl", "pandas", "pdf2image", "pdfminer.six", "pikepdf", "pypandoc", "pypdf", "python-docx", "python-pptx (<=0.6.23)", "unstructured-inference (==0.7.23)", "unstructured.pytesseract (>=0.3.12)", "xlrd"]
 md = ["markdown"]
 mongodb = ["pymongo"]
 msg = ["msg-parser"]
@@ -7896,11 +7898,13 @@ notion = ["htmlBuilder", "notion-client"]
 odt = ["pypandoc", "python-docx"]
 onedrive = ["Office365-REST-Python-Client", "bs4", "msal"]
 openai = ["langchain", "openai", "tiktoken"]
+opensearch = ["opensearch-py"]
 org = ["pypandoc"]
 outlook = ["Office365-REST-Python-Client", "msal"]
 paddleocr = ["unstructured.paddleocr (==2.6.1.3)"]
-pdf = ["onnx", "pdf2image", "pdfminer.six", "pikepdf", "pypdf", "unstructured-inference (==0.7.21)", "unstructured.pytesseract (>=0.3.12)"]
-pinecone = ["pinecone-client"]
+pdf = ["onnx", "pdf2image", "pdfminer.six", "pikepdf", "pypdf", "unstructured-inference (==0.7.23)", "unstructured.pytesseract (>=0.3.12)"]
+pinecone = ["pinecone-client (==2.2.4)"]
+postgres = ["psycopg2-binary"]
 ppt = ["python-pptx (<=0.6.23)"]
 pptx = ["python-pptx (<=0.6.23)"]
 qdrant = ["qdrant-client"]
@@ -7919,45 +7923,43 @@ xlsx = ["networkx", "openpyxl", "pandas", "xlrd"]
 
 [[package]]
 name = "unstructured-client"
-version = "0.6.0"
-description = "Python Client SDK Generated by Speakeasy"
+version = "0.17.0"
+description = "Python Client SDK for Unstructured API"
 optional = false
-python-versions = ">=3.9"
+python-versions = ">=3.8"
 files = [
-    {file = "unstructured-client-0.6.0.tar.gz", hash = "sha256:ef9ae38af3ea0e67745d58d343a96d8426728694990e60d40cbb26d4da4a88b8"},
-    {file = "unstructured_client-0.6.0-py3-none-any.whl", hash = "sha256:ab1e66c38c675aa6728e515050ead020fbc1fccacb200bea1ab760910d8cf78d"},
+    {file = "unstructured-client-0.17.0.tar.gz", hash = "sha256:3b98affa4a47e370b7b0a1b8f0d889f20aa6d8925b2b108b60aa07cf54a04fb5"},
+    {file = "unstructured_client-0.17.0-py3-none-any.whl", hash = "sha256:2b311f0f7304ac64986b0312431fe99945f95a6fa0c88ab91094570c932a9e19"},
 ]
 
 [package.dependencies]
-certifi = ">=2022.12.7"
-charset-normalizer = ">=2.1.1"
-dataclasses-json = ">=0.5.12"
-idna = ">=3.3"
+certifi = ">=2023.7.22"
+charset-normalizer = ">=3.2.0"
+dataclasses-json-speakeasy = ">=0.5.11"
+idna = ">=3.4"
 jsonpath-python = ">=1.0.6"
-marshmallow = ">=3.17.1"
-marshmallow-enum = ">=1.5.1"
-mypy-extensions = ">=0.4.3"
-packaging = ">=21.3"
-pyparsing = ">=3.0.9"
+marshmallow = ">=3.19.0"
+mypy-extensions = ">=1.0.0"
+packaging = ">=23.1"
 python-dateutil = ">=2.8.2"
-requests = ">=2.28.1"
+requests = ">=2.31.0"
 six = ">=1.16.0"
-typing-extensions = ">=4.3.0"
-typing-inspect = ">=0.8.0"
-urllib3 = ">=1.26.12"
+typing-extensions = ">=4.7.1"
+typing-inspect = ">=0.9.0"
+urllib3 = ">=1.26.18"
 
 [package.extras]
 dev = ["pylint (==2.16.2)"]
 
 [[package]]
 name = "unstructured-inference"
-version = "0.7.21"
+version = "0.7.23"
 description = "A library for performing inference using trained models."
 optional = false
 python-versions = ">=3.7.0"
 files = [
-    {file = "unstructured_inference-0.7.21-py3-none-any.whl", hash = "sha256:7e28faa4c84dd9e78162781507bbf596670c089fb5d5d0713989352dd783e122"},
-    {file = "unstructured_inference-0.7.21.tar.gz", hash = "sha256:b0d19e08cfa4170e743b070246f02da77ac71a0e78a8747d6563a25615fac2c7"},
+    {file = "unstructured_inference-0.7.23-py3-none-any.whl", hash = "sha256:f47d7e88dfcac910c5ad57580b132d0fe09d90e3a03908958621109f755e7f3e"},
+    {file = "unstructured_inference-0.7.23.tar.gz", hash = "sha256:b9cf691503accc78190c9a2bd65c446c870dc6936bbd93ba638807e9a69602fb"},
 ]
 
 [package.dependencies]
@@ -8621,4 +8623,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "3.11.7"
-content-hash = "665fc73494933d7bcdb92e3d9569d75b055388df95f1351fa3c6cb19c942f3cf"
+content-hash = "b398c9cc14f812926f2e792612edab21c0bc37b83a5e9c038a72fc97715964d5"
