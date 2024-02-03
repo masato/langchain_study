@@ -2718,13 +2718,13 @@ adal = ["adal (>=1.0.2)"]
 
 [[package]]
 name = "lancedb"
-version = "0.5.1"
+version = "0.5.3"
 description = "lancedb"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "lancedb-0.5.1-py3-none-any.whl", hash = "sha256:13d9cb7e6812db5caf3d3a935af88bd807bb0089366cffdf6042b45862abd8ee"},
-    {file = "lancedb-0.5.1.tar.gz", hash = "sha256:00557b16424037c2dbf803eb5343125bf934da141a0d641fd00b0825e3074bff"},
+    {file = "lancedb-0.5.3-py3-none-any.whl", hash = "sha256:d960404a693f6b15e9f36bbe822378a4be0a460fba43311e2a62be3a12943319"},
+    {file = "lancedb-0.5.3.tar.gz", hash = "sha256:88de4f1cb705701cf8f8ea4534879660a6917bc6b50da349e7fdf095dfab45c4"},
 ]
 
 [package.dependencies]
@@ -2734,7 +2734,7 @@ click = ">=8.1.7"
 deprecation = "*"
 overrides = ">=0.7"
 pydantic = ">=1.10"
-pylance = "0.9.7"
+pylance = "0.9.12"
 pyyaml = ">=6.0"
 ratelimiter = ">=1.0,<2.0"
 requests = ">=2.31.0"
@@ -2746,7 +2746,7 @@ tqdm = ">=4.27.0"
 clip = ["open-clip", "pillow", "torch"]
 dev = ["pre-commit", "ruff"]
 docs = ["mkdocs", "mkdocs-jupyter", "mkdocs-material", "mkdocstrings[python]"]
-embeddings = ["InstructorEmbedding", "cohere", "open-clip-torch", "openai (>=1.6.1)", "pillow", "sentence-transformers", "torch"]
+embeddings = ["InstructorEmbedding", "awscli (>=1.29.57)", "boto3 (>=1.28.57)", "botocore (>=1.31.57)", "cohere", "google.generativeai", "huggingface-hub", "open-clip-torch", "openai (>=1.6.1)", "pillow", "sentence-transformers", "torch"]
 tests = ["aiohttp", "duckdb", "pandas (>=1.4)", "polars", "pytest", "pytest-asyncio", "pytest-mock", "pytz"]
 
 [[package]]
@@ -5314,16 +5314,16 @@ tests = ["coverage[toml] (==5.0.4)", "pytest (>=6.0.0,<7.0.0)"]
 
 [[package]]
 name = "pylance"
-version = "0.9.7"
+version = "0.9.12"
 description = "python wrapper for Lance columnar format"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "pylance-0.9.7-cp38-abi3-macosx_10_15_x86_64.whl", hash = "sha256:5538838a584908656603dd908b25dc4f82b329af8c97e65361327e1a71ffa5bc"},
-    {file = "pylance-0.9.7-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:894c9fff2e4c4cc02e3c8a444b410c655b9aef759a5e4023def76b448bba0c79"},
-    {file = "pylance-0.9.7-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:246962523cfb95cfceac714301e4b42d7450bea99fdfd3c4ad0cbc992c8f570d"},
-    {file = "pylance-0.9.7-cp38-abi3-manylinux_2_24_aarch64.whl", hash = "sha256:8ec37446d04aa7e2207f0ee13d3679f0640ad566c601e5f19db6a4092c150996"},
-    {file = "pylance-0.9.7-cp38-abi3-win_amd64.whl", hash = "sha256:0ea27558357738dffea3c5360cefd343dbb013808e33a617d741a8b1e5c6d006"},
+    {file = "pylance-0.9.12-cp38-abi3-macosx_10_15_x86_64.whl", hash = "sha256:cf4616de5fe97f72c2a57847265e55833dd84d9e429bcadffe07d706ff08d8a7"},
+    {file = "pylance-0.9.12-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:16fdc334c29405410a1867dd9a83631f2265ac635914101ab554284d07e28e05"},
+    {file = "pylance-0.9.12-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:78fc7a594fdf48fc5127944f566acc787621a172ba6213c9caea33cabcf5b557"},
+    {file = "pylance-0.9.12-cp38-abi3-manylinux_2_24_aarch64.whl", hash = "sha256:1f2f8b809b67a14e98d09d21bf36718ddf07be7fd96131d76532d0c3b17050be"},
+    {file = "pylance-0.9.12-cp38-abi3-win_amd64.whl", hash = "sha256:870624f9764782a7ddecc3ad89b0504055f5fa2a549e42906aaa75acd5d7b4c9"},
 ]
 
 [package.dependencies]
@@ -5332,7 +5332,7 @@ pyarrow = ">=12"
 
 [package.extras]
 benchmarks = ["pytest-benchmark"]
-tests = ["duckdb", "ml_dtypes", "pandas", "polars[pandas,pyarrow]", "pytest", "tensorflow", "tqdm"]
+tests = ["datasets", "duckdb", "ml_dtypes", "pandas", "pillow", "polars[pandas,pyarrow]", "pytest", "tensorflow", "tqdm"]
 torch = ["torch"]
 
 [[package]]
@@ -8621,4 +8621,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "3.11.7"
-content-hash = "f3f1e2f274555b4af50dea140c8ba7b983108bc511e89953e28082f3537873ee"
+content-hash = "cf5cc98486b05854a970e887fd5755de61b08f306aab3d2132aa2f1a9f5b65e3"
