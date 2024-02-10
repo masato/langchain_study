@@ -2733,13 +2733,13 @@ adal = ["adal (>=1.0.2)"]
 
 [[package]]
 name = "lancedb"
-version = "0.5.3"
+version = "0.5.4"
 description = "lancedb"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "lancedb-0.5.3-py3-none-any.whl", hash = "sha256:d960404a693f6b15e9f36bbe822378a4be0a460fba43311e2a62be3a12943319"},
-    {file = "lancedb-0.5.3.tar.gz", hash = "sha256:88de4f1cb705701cf8f8ea4534879660a6917bc6b50da349e7fdf095dfab45c4"},
+    {file = "lancedb-0.5.4-py3-none-any.whl", hash = "sha256:37b1fe92101eb43163393f188434a798fbb89930105c2a77dd19d55046322f19"},
+    {file = "lancedb-0.5.4.tar.gz", hash = "sha256:5724cb4820fe873f0d2d1591b2bc7839e364f0f90dd8c8c223568d1bbf661094"},
 ]
 
 [package.dependencies]
@@ -2749,7 +2749,7 @@ click = ">=8.1.7"
 deprecation = "*"
 overrides = ">=0.7"
 pydantic = ">=1.10"
-pylance = "0.9.12"
+pylance = "0.9.15"
 pyyaml = ">=6.0"
 ratelimiter = ">=1.0,<2.0"
 requests = ">=2.31.0"
@@ -2762,7 +2762,7 @@ clip = ["open-clip", "pillow", "torch"]
 dev = ["pre-commit", "ruff"]
 docs = ["mkdocs", "mkdocs-jupyter", "mkdocs-material", "mkdocstrings[python]"]
 embeddings = ["InstructorEmbedding", "awscli (>=1.29.57)", "boto3 (>=1.28.57)", "botocore (>=1.31.57)", "cohere", "google.generativeai", "huggingface-hub", "open-clip-torch", "openai (>=1.6.1)", "pillow", "sentence-transformers", "torch"]
-tests = ["aiohttp", "duckdb", "pandas (>=1.4)", "polars", "pytest", "pytest-asyncio", "pytest-mock", "pytz"]
+tests = ["aiohttp", "duckdb", "pandas (>=1.4)", "polars (>=0.19)", "pytest", "pytest-asyncio", "pytest-mock", "pytz"]
 
 [[package]]
 name = "langchain"
@@ -5315,16 +5315,16 @@ tests = ["coverage[toml] (==5.0.4)", "pytest (>=6.0.0,<7.0.0)"]
 
 [[package]]
 name = "pylance"
-version = "0.9.12"
+version = "0.9.15"
 description = "python wrapper for Lance columnar format"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "pylance-0.9.12-cp38-abi3-macosx_10_15_x86_64.whl", hash = "sha256:cf4616de5fe97f72c2a57847265e55833dd84d9e429bcadffe07d706ff08d8a7"},
-    {file = "pylance-0.9.12-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:16fdc334c29405410a1867dd9a83631f2265ac635914101ab554284d07e28e05"},
-    {file = "pylance-0.9.12-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:78fc7a594fdf48fc5127944f566acc787621a172ba6213c9caea33cabcf5b557"},
-    {file = "pylance-0.9.12-cp38-abi3-manylinux_2_24_aarch64.whl", hash = "sha256:1f2f8b809b67a14e98d09d21bf36718ddf07be7fd96131d76532d0c3b17050be"},
-    {file = "pylance-0.9.12-cp38-abi3-win_amd64.whl", hash = "sha256:870624f9764782a7ddecc3ad89b0504055f5fa2a549e42906aaa75acd5d7b4c9"},
+    {file = "pylance-0.9.15-cp38-abi3-macosx_10_15_x86_64.whl", hash = "sha256:8bdc0aac869d1bea2d791cc94883dedc850fcc104b89d44d01e64ec071a277d8"},
+    {file = "pylance-0.9.15-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:1e594f6c09240acc674bfa6ff38b48230d401d0882cef249a37459de45cfd7ce"},
+    {file = "pylance-0.9.15-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:fb860bf4d0df25d259b100c009ef2eb02e77c6d4d73be208f81411cd7a50d476"},
+    {file = "pylance-0.9.15-cp38-abi3-manylinux_2_24_aarch64.whl", hash = "sha256:3ee0497590c06a2a97d5077ae51cb967f96ada8fe73e85722a7719203fd4be1f"},
+    {file = "pylance-0.9.15-cp38-abi3-win_amd64.whl", hash = "sha256:9bca8d4d82a1d1d390e2b9f9e9380dde26db6559bc4715f5a342e4c7e268d57b"},
 ]
 
 [package.dependencies]
@@ -8623,4 +8623,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "3.11.7"
-content-hash = "66c092fbe1965114ccac11bc39291f66f7207b303258ce17aecb119fd3726316"
+content-hash = "f7e53e28255e468a357c6b4a35879b2616b3cfe3917dca2bf5dbd7d3751f1587"
