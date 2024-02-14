@@ -2719,13 +2719,13 @@ adal = ["adal (>=1.0.2)"]
 
 [[package]]
 name = "lancedb"
-version = "0.5.4"
+version = "0.5.5"
 description = "lancedb"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "lancedb-0.5.4-py3-none-any.whl", hash = "sha256:37b1fe92101eb43163393f188434a798fbb89930105c2a77dd19d55046322f19"},
-    {file = "lancedb-0.5.4.tar.gz", hash = "sha256:5724cb4820fe873f0d2d1591b2bc7839e364f0f90dd8c8c223568d1bbf661094"},
+    {file = "lancedb-0.5.5-py3-none-any.whl", hash = "sha256:98810855f279469dc6f1626ba1d104cff64fbb6e71661d56961948f213572bac"},
+    {file = "lancedb-0.5.5.tar.gz", hash = "sha256:034ef65d1456ca7f0f9dfc33c93d7cbfa893b45411d218258f1c01a1c069bdbf"},
 ]
 
 [package.dependencies]
@@ -8669,4 +8669,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "3.11.7"
-content-hash = "b96c8572a5b783709e420ec2aa51bf2f44dd88cdac0f8fd7da2f59a368cfc7f5"
+content-hash = "19e2b64884db00c8260cf2adff9c965c0e23557c18ff812e97ec6e3c57e4a82f"
