@@ -2752,20 +2752,20 @@ tests = ["aiohttp", "duckdb", "pandas (>=1.4)", "polars (>=0.19)", "pytest", "py
 
 [[package]]
 name = "langchain"
-version = "0.1.6"
+version = "0.1.7"
 description = "Building applications with LLMs through composability"
 optional = false
 python-versions = ">=3.8.1,<4.0"
 files = [
-    {file = "langchain-0.1.6-py3-none-any.whl", hash = "sha256:925e180fd1ae53b7085e46b3cdc9db04c24ddc6f4ac08f171eea29498d99603a"},
-    {file = "langchain-0.1.6.tar.gz", hash = "sha256:a885e16c10b9ed11f312eaa6570bc48d27305362b26f6c235cafdcc794e26e71"},
+    {file = "langchain-0.1.7-py3-none-any.whl", hash = "sha256:29d95f12afe9690953820970205dba3b098ee1f7531e80eb18c1236d3feda921"},
+    {file = "langchain-0.1.7.tar.gz", hash = "sha256:b40fbe2b65360afe6c0d5bbf37e79469f990779460640edde5b906175c49807e"},
 ]
 
 [package.dependencies]
 aiohttp = ">=3.8.3,<4.0.0"
 dataclasses-json = ">=0.5.7,<0.7"
 jsonpatch = ">=1.33,<2.0"
-langchain-community = ">=0.0.18,<0.1"
+langchain-community = ">=0.0.20,<0.1"
 langchain-core = ">=0.1.22,<0.2"
 langsmith = ">=0.0.83,<0.1"
 numpy = ">=1,<2"
@@ -8669,4 +8669,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "3.11.7"
-content-hash = "4d8875ef75b12bc57adec8a58f3b17ca5f618bd98aa712795c90c35e4bef1a59"
+content-hash = "32efc6d9ead8d7f56a435f39ac0ddfef4ac1457f754026ba41e82feb0133d337"
