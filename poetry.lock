@@ -678,13 +678,13 @@ pycparser = "*"
 
 [[package]]
 name = "chainlit"
-version = "1.0.200"
+version = "1.0.301"
 description = "Build Conversational AI."
 optional = false
 python-versions = ">=3.8.1,<4.0.0"
 files = [
-    {file = "chainlit-1.0.200-py3-none-any.whl", hash = "sha256:4d2bad380d3e25031e8805354fca4a2a76317889089317fc7fe2cba42a12d0c0"},
-    {file = "chainlit-1.0.200.tar.gz", hash = "sha256:13596d8919f236b1aa6de693b60bacd05638065d53c717daee0998f9788896a7"},
+    {file = "chainlit-1.0.301-py3-none-any.whl", hash = "sha256:b2dd30b58c571f8f2dc095b1b4e919885e1c513b4d8f6f5b37d882f134a060d6"},
+    {file = "chainlit-1.0.301.tar.gz", hash = "sha256:7e5bdd33ad2c6a0af13f406ca6d31796a6679fa6e8945c919eb159b7703f0aa5"},
 ]
 
 [package.dependencies]
@@ -692,12 +692,12 @@ aiofiles = ">=23.1.0,<24.0.0"
 asyncer = ">=0.0.2,<0.0.3"
 click = ">=8.1.3,<9.0.0"
 dataclasses_json = ">=0.5.7,<0.6.0"
-fastapi = ">=0.100,<0.109.0"
+fastapi = ">=0.100"
 fastapi-socketio = ">=0.0.10,<0.0.11"
 filetype = ">=1.2.0,<2.0.0"
-httpx = ">=0.23.0,<0.25.0"
+httpx = ">=0.23.0"
 lazify = ">=0.4.0,<0.5.0"
-literalai = "0.0.103"
+literalai = "0.0.204"
 nest-asyncio = ">=1.5.6,<2.0.0"
 packaging = ">=23.1,<24.0"
 pydantic = ">=1,<3"
@@ -705,6 +705,7 @@ pyjwt = ">=2.8.0,<3.0.0"
 python-dotenv = ">=1.0.0,<2.0.0"
 python-graphql-client = ">=0.4.3,<0.5.0"
 python-multipart = ">=0.0.6,<0.0.7"
+starlette = "<0.33.0"
 syncer = ">=2.0.3,<3.0.0"
 tomli = ">=2.0.1,<3.0.0"
 uptrace = ">=1.22.0,<2.0.0"
@@ -2990,16 +2991,16 @@ files = [
 
 [[package]]
 name = "literalai"
-version = "0.0.103"
+version = "0.0.204"
 description = "An SDK for observability in Python applications"
 optional = false
 python-versions = "*"
 files = [
-    {file = "literalai-0.0.103.tar.gz", hash = "sha256:551bd0ec4cf8179b217b058902cbe7dbb7411e11c1b75f7740e70cf341d7f9e4"},
+    {file = "literalai-0.0.204.tar.gz", hash = "sha256:9492ae106602cbb12d41d4e4dee22a8f4da1fdc260228046a86bf8e6aae4434e"},
 ]
 
 [package.dependencies]
-httpx = ">=0.23.0,<0.25.0"
+httpx = ">=0.23.0"
 packaging = ">=23.0"
 pydantic = ">=1,<3"
 
@@ -8713,4 +8714,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "3.11.7"
-content-hash = "500386cae33cac5fba121b7169b43e80f322fe58d0f10ca3dd9d2f1779073522"
+content-hash = "bac636bfd732dff775f8e8b1e35bdee97a043c32c60e118ce65586d6eb681d0c"
