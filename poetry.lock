@@ -2731,13 +2731,13 @@ adal = ["adal (>=1.0.2)"]
 
 [[package]]
 name = "lancedb"
-version = "0.5.5"
+version = "0.5.6"
 description = "lancedb"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "lancedb-0.5.5-py3-none-any.whl", hash = "sha256:98810855f279469dc6f1626ba1d104cff64fbb6e71661d56961948f213572bac"},
-    {file = "lancedb-0.5.5.tar.gz", hash = "sha256:034ef65d1456ca7f0f9dfc33c93d7cbfa893b45411d218258f1c01a1c069bdbf"},
+    {file = "lancedb-0.5.6-py3-none-any.whl", hash = "sha256:875e397ac40d1a8ea812d8eb81b5e7617c815392361d6e2009790d47049fabe1"},
+    {file = "lancedb-0.5.6.tar.gz", hash = "sha256:88b220855050696c3e0b1e5ba0f2cb0f2dcf81041ca5015b625ad36d641e66fb"},
 ]
 
 [package.dependencies]
@@ -2747,7 +2747,7 @@ click = ">=8.1.7"
 deprecation = "*"
 overrides = ">=0.7"
 pydantic = ">=1.10"
-pylance = "0.9.15"
+pylance = "0.9.16"
 pyyaml = ">=6.0"
 ratelimiter = ">=1.0,<2.0"
 requests = ">=2.31.0"
@@ -5381,16 +5381,16 @@ tests = ["coverage[toml] (==5.0.4)", "pytest (>=6.0.0,<7.0.0)"]
 
 [[package]]
 name = "pylance"
-version = "0.9.15"
+version = "0.9.16"
 description = "python wrapper for Lance columnar format"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "pylance-0.9.15-cp38-abi3-macosx_10_15_x86_64.whl", hash = "sha256:8bdc0aac869d1bea2d791cc94883dedc850fcc104b89d44d01e64ec071a277d8"},
-    {file = "pylance-0.9.15-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:1e594f6c09240acc674bfa6ff38b48230d401d0882cef249a37459de45cfd7ce"},
-    {file = "pylance-0.9.15-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:fb860bf4d0df25d259b100c009ef2eb02e77c6d4d73be208f81411cd7a50d476"},
-    {file = "pylance-0.9.15-cp38-abi3-manylinux_2_24_aarch64.whl", hash = "sha256:3ee0497590c06a2a97d5077ae51cb967f96ada8fe73e85722a7719203fd4be1f"},
-    {file = "pylance-0.9.15-cp38-abi3-win_amd64.whl", hash = "sha256:9bca8d4d82a1d1d390e2b9f9e9380dde26db6559bc4715f5a342e4c7e268d57b"},
+    {file = "pylance-0.9.16-cp38-abi3-macosx_10_15_x86_64.whl", hash = "sha256:16bb0bdf20b08dd94803ed05b023703afa40330084e9320e111ced251c59d7d0"},
+    {file = "pylance-0.9.16-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:be7e0e4ef8f858eb210643b3d7ae9e2c99ae6095836fee307f4acd2fc4c8d3e9"},
+    {file = "pylance-0.9.16-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:d4f9c3546ac20388a658cca52a4701a6e05dcb86ef7add8514c72cde2ea75dc8"},
+    {file = "pylance-0.9.16-cp38-abi3-manylinux_2_24_aarch64.whl", hash = "sha256:796a09df6cac8d8e47fa02362f7e5f6ee453bc5874c6abcfbb8e06bde97f3039"},
+    {file = "pylance-0.9.16-cp38-abi3-win_amd64.whl", hash = "sha256:7e919c125fa6fa16dbaea2979093d7044b9ba77a7ed127f5595c976037069d44"},
 ]
 
 [package.dependencies]
@@ -8714,4 +8714,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "3.11.7"
-content-hash = "5b66ceb76c6ed839350e4ae837667b4d59dd67ab6a3340536c8bb30cf587d84d"
+content-hash = "96755af680da5397734eb93424c36d8c77154fb6bbb365ece4bf03d1e2d92342"
