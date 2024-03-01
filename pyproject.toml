@@ -33,7 +33,7 @@ lancedb = "0.5.7"
 pandas = "2.2.1"
 python-dotenv = "1.0.1"
 pyarrow = "14.0.2"
-unstructured = { extras = ["local-inference"], version = "0.12.4" }
+unstructured = { extras = ["local-inference"], version = "0.12.5" }
 
 
 [tool.poetry.group.dev.dependencies]
