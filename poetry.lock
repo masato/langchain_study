@@ -2748,13 +2748,16 @@ adal = ["adal (>=1.0.2)"]
 
 [[package]]
 name = "lancedb"
-version = "0.5.7"
+version = "0.6.1"
 description = "lancedb"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "lancedb-0.5.7-py3-none-any.whl", hash = "sha256:6169966f715ef530be545950e1aaf9f3f160967e4ba7456cd67c9f30f678095d"},
-    {file = "lancedb-0.5.7.tar.gz", hash = "sha256:878914b493f91d09a77b14f1528104741f273234cbdd6671be705f447701fd51"},
+    {file = "lancedb-0.6.1-cp38-abi3-macosx_10_15_x86_64.whl", hash = "sha256:4842593b395a07405213388c6791a77f60181371e21f7bb8944f823f82488d7d"},
+    {file = "lancedb-0.6.1-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:853a3fb183cec40c16d157afba741513b56c3a663dd089265fa4c662e245a21b"},
+    {file = "lancedb-0.6.1-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:58956013da91f4d9e553a23e1b990adbe3a0a7077fc30269976cf5fa6ea99564"},
+    {file = "lancedb-0.6.1-cp38-abi3-manylinux_2_24_aarch64.whl", hash = "sha256:9d12ae8951b6f1842ead84149131445d58a99e506ca1f1396705d3ce712cd6f0"},
+    {file = "lancedb-0.6.1-cp38-abi3-win_amd64.whl", hash = "sha256:bb3556d2a8409dacba2b719c43a1fa09f8c43db675357ede1cfaece929df8811"},
 ]
 
 [package.dependencies]
@@ -2764,7 +2767,7 @@ click = ">=8.1.7"
 deprecation = "*"
 overrides = ">=0.7"
 pydantic = ">=1.10"
-pylance = "0.9.18"
+pylance = "0.10.1"
 pyyaml = ">=6.0"
 ratelimiter = ">=1.0,<2.0"
 requests = ">=2.31.0"
@@ -2776,7 +2779,7 @@ tqdm = ">=4.27.0"
 clip = ["open-clip", "pillow", "torch"]
 dev = ["pre-commit", "ruff"]
 docs = ["mkdocs", "mkdocs-jupyter", "mkdocs-material", "mkdocs-ultralytics-plugin (==0.0.44)", "mkdocstrings[python]"]
-embeddings = ["InstructorEmbedding", "awscli (>=1.29.57)", "boto3 (>=1.28.57)", "botocore (>=1.31.57)", "cohere", "google.generativeai", "huggingface-hub", "open-clip-torch", "openai (>=1.6.1)", "pillow", "sentence-transformers", "torch"]
+embeddings = ["InstructorEmbedding", "awscli (>=1.29.57)", "boto3 (>=1.28.57)", "botocore (>=1.31.57)", "cohere", "google.generativeai", "huggingface_hub", "open-clip-torch", "openai (>=1.6.1)", "pillow", "sentence-transformers", "torch"]
 tests = ["aiohttp", "duckdb", "pandas (>=1.4)", "polars (>=0.19)", "pytest", "pytest-asyncio", "pytest-mock", "pytz"]
 
 [[package]]
@@ -5455,16 +5458,16 @@ tests = ["coverage[toml] (==5.0.4)", "pytest (>=6.0.0,<7.0.0)"]
 
 [[package]]
 name = "pylance"
-version = "0.9.18"
+version = "0.10.1"
 description = "python wrapper for Lance columnar format"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "pylance-0.9.18-cp38-abi3-macosx_10_15_x86_64.whl", hash = "sha256:fe2445d922c594d90e89111385106f6b152caab27996217db7bb4b8947eb0bea"},
-    {file = "pylance-0.9.18-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:a2c424c50f5186edbbcc5a26f34063ed09d9a7390e28033395728ce02b5658f0"},
-    {file = "pylance-0.9.18-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:10af06edfde3e8451bf2251381d3980a0a164eab9d4c3d4dc8b6318969e958a6"},
-    {file = "pylance-0.9.18-cp38-abi3-manylinux_2_24_aarch64.whl", hash = "sha256:d8bb9045d7163cc966b9fe34a917044192be37a90915475b77461e5b7d89e442"},
-    {file = "pylance-0.9.18-cp38-abi3-win_amd64.whl", hash = "sha256:5ea80b7bf70d992f3fe63bce2d2f064f742124c04eaedeb76baca408ded85a2c"},
+    {file = "pylance-0.10.1-cp38-abi3-macosx_10_15_x86_64.whl", hash = "sha256:f7dd2aab0416c0770f626104ab36f729a0268d61249452761711d018c1e7ef9e"},
+    {file = "pylance-0.10.1-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:760581a970e44dd054ad3740eb154df88fc7a016bb35b4adec73b8d229656a29"},
+    {file = "pylance-0.10.1-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:baae54aa37a1d2c5ef065e92e0805106d53b89f7f1fcd1a457a1bad91e5ff180"},
+    {file = "pylance-0.10.1-cp38-abi3-manylinux_2_24_aarch64.whl", hash = "sha256:3d9622b8f660db3d1c7ad233547e223437a838f3eced1ca2e59c702bded84139"},
+    {file = "pylance-0.10.1-cp38-abi3-win_amd64.whl", hash = "sha256:287078721ba081d4b6b3ddd94eb3f17a01dfeb0f59b7f1ae72ec42faa46c3930"},
 ]
 
 [package.dependencies]
@@ -8792,4 +8795,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "3.11.7"
-content-hash = "a14719a957b2a794371e75c5740f77ea3e6a351afc94554891897e2a92686901"
+content-hash = "2c664a292fcd46d83cc45d0ace1911617b654a67193258ee5527220dbc63fb35"
