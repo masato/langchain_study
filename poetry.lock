@@ -2909,13 +2909,13 @@ tiktoken = ">=0.5.2,<1"
 
 [[package]]
 name = "langchainhub"
-version = "0.1.14"
-description = ""
+version = "0.1.15"
+description = "The LangChain Hub API client"
 optional = false
 python-versions = ">=3.8.1,<4.0"
 files = [
-    {file = "langchainhub-0.1.14-py3-none-any.whl", hash = "sha256:3d58a050a3a70684bca2e049a2425a2418d199d0b14e3c8aa318123b7f18b21a"},
-    {file = "langchainhub-0.1.14.tar.gz", hash = "sha256:c1aeda38d66df1146f9e60e47bde7fb12bad902eb19dba78ac02f89e0f1f1867"},
+    {file = "langchainhub-0.1.15-py3-none-any.whl", hash = "sha256:89a0951abd1db255e91c6d545d092a598fc255aa865d1ffc3ce8f93bbeae60e7"},
+    {file = "langchainhub-0.1.15.tar.gz", hash = "sha256:fa3ff81a31946860f84c119f1e2f6b7c7707e2bd7ed2394a7313b286d59f3bda"},
 ]
 
 [package.dependencies]
@@ -8795,4 +8795,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "3.11.7"
-content-hash = "3e5b029bc5ca37934d608e0b163e3c260c3abb71a1ff0de5cdac2f3ffe4cfe8b"
+content-hash = "ec1da1270aa6eff2badf696d168f4c6b9989009e6bbaad7c9f2dae5ef543a919"
