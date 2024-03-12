@@ -2749,16 +2749,16 @@ adal = ["adal (>=1.0.2)"]
 
 [[package]]
 name = "lancedb"
-version = "0.6.2"
+version = "0.6.3"
 description = "lancedb"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "lancedb-0.6.2-cp38-abi3-macosx_10_15_x86_64.whl", hash = "sha256:b1376b6b082bbefed78a37878df888aac46f331f0768ade3777388e3e65186c1"},
-    {file = "lancedb-0.6.2-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:92a3621ffddb3fbf453088585f39233d2672ce1130ea8a881eeb34c5eef07a0c"},
-    {file = "lancedb-0.6.2-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:b32751ef65471cda35be9e1f413d01b6b99290a5f8b057f5d73d149a240c2734"},
-    {file = "lancedb-0.6.2-cp38-abi3-manylinux_2_24_aarch64.whl", hash = "sha256:fb4df69d35b809a68c836687cd0db478165da81f5e9259f9b91ba2430e6491c5"},
-    {file = "lancedb-0.6.2-cp38-abi3-win_amd64.whl", hash = "sha256:0a6a26b2d53ae4a432c57629857449fe70d5aa6979cdf6f9c65f94d10d6b98ee"},
+    {file = "lancedb-0.6.3-cp38-abi3-macosx_10_15_x86_64.whl", hash = "sha256:0d090eb3211d594b0025d3d0978c6999db4f79b30633309eaabe1423ac593a23"},
+    {file = "lancedb-0.6.3-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:56e68a1fab85d5ed9e203fb88813b707248c272f3d36d60d6e47aec77896b226"},
+    {file = "lancedb-0.6.3-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:fde7bc38a451e7721d2f3d5f3f7da1b754f575e211a91e8df9b2c779387a090b"},
+    {file = "lancedb-0.6.3-cp38-abi3-manylinux_2_24_aarch64.whl", hash = "sha256:643df736abb4f0fc076b55078cdbe52d5e4b44909775a3e0bc0abd71c9dac808"},
+    {file = "lancedb-0.6.3-cp38-abi3-win_amd64.whl", hash = "sha256:ca87b8f10b696265226fedd3d04546806eeffa81d47dc1fee0be7835ad023d7c"},
 ]
 
 [package.dependencies]
@@ -8750,4 +8750,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "3.11.7"
-content-hash = "8eac489c76e5befadd40823dfe880432394be42112ef52775e39abc1bbfa4dfc"
+content-hash = "b2652ea785e5832559eb041e0338a990e2635145f3c12cf04e1227b42a4b8c8b"
