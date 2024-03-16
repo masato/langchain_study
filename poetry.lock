@@ -2749,16 +2749,16 @@ adal = ["adal (>=1.0.2)"]
 
 [[package]]
 name = "lancedb"
-version = "0.6.3"
+version = "0.6.4"
 description = "lancedb"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "lancedb-0.6.3-cp38-abi3-macosx_10_15_x86_64.whl", hash = "sha256:0d090eb3211d594b0025d3d0978c6999db4f79b30633309eaabe1423ac593a23"},
-    {file = "lancedb-0.6.3-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:56e68a1fab85d5ed9e203fb88813b707248c272f3d36d60d6e47aec77896b226"},
-    {file = "lancedb-0.6.3-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:fde7bc38a451e7721d2f3d5f3f7da1b754f575e211a91e8df9b2c779387a090b"},
-    {file = "lancedb-0.6.3-cp38-abi3-manylinux_2_24_aarch64.whl", hash = "sha256:643df736abb4f0fc076b55078cdbe52d5e4b44909775a3e0bc0abd71c9dac808"},
-    {file = "lancedb-0.6.3-cp38-abi3-win_amd64.whl", hash = "sha256:ca87b8f10b696265226fedd3d04546806eeffa81d47dc1fee0be7835ad023d7c"},
+    {file = "lancedb-0.6.4-cp38-abi3-macosx_10_15_x86_64.whl", hash = "sha256:88193e85f229e06fde4fbb6fca150bd54cf4ad8853560fd1db5877fe7129f381"},
+    {file = "lancedb-0.6.4-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:1883953b97c829a3673ea7b6e5b1facbd77c5841d800638a11725f91041d5418"},
+    {file = "lancedb-0.6.4-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:41b00f4ce13a5adbd66ca43a877ba5e9ecc17b526378bdceceb89849183fee50"},
+    {file = "lancedb-0.6.4-cp38-abi3-manylinux_2_24_aarch64.whl", hash = "sha256:0fdc9f5e4eb70a46a30f05e62d8cfaf00aaae3cde7a527ef3a57af8e35d3b0b6"},
+    {file = "lancedb-0.6.4-cp38-abi3-win_amd64.whl", hash = "sha256:2d20ee4dddfef71177edc601892169d70fd1e522c9b51fe852fab72354d5cc0b"},
 ]
 
 [package.dependencies]
@@ -2768,7 +2768,7 @@ click = ">=8.1.7"
 deprecation = "*"
 overrides = ">=0.7"
 pydantic = ">=1.10"
-pylance = "0.10.2"
+pylance = "0.10.4"
 pyyaml = ">=6.0"
 ratelimiter = ">=1.0,<2.0"
 requests = ">=2.31.0"
@@ -2777,6 +2777,7 @@ semver = ">=3.0"
 tqdm = ">=4.27.0"
 
 [package.extras]
+azure = ["adlfs (>=2024.2.0)"]
 clip = ["open-clip", "pillow", "torch"]
 dev = ["pre-commit", "ruff"]
 docs = ["mkdocs", "mkdocs-jupyter", "mkdocs-material", "mkdocs-ultralytics-plugin (==0.0.44)", "mkdocstrings[python]"]
@@ -5460,26 +5461,26 @@ tests = ["coverage[toml] (==5.0.4)", "pytest (>=6.0.0,<7.0.0)"]
 
 [[package]]
 name = "pylance"
-version = "0.10.2"
+version = "0.10.4"
 description = "python wrapper for Lance columnar format"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "pylance-0.10.2-cp38-abi3-macosx_10_15_x86_64.whl", hash = "sha256:e045609dde4701c37136d3c1a047a7dff072a2ca06c9440bb0ca2c56b629a35f"},
-    {file = "pylance-0.10.2-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:c801fc8da73418f049e60c494431cd613253bcd195bd93abe13713f2a122df0c"},
-    {file = "pylance-0.10.2-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:bbec7eeb29d479319db61c7fd3bb91f096c8fd13824feab0773a5b5e268ca698"},
-    {file = "pylance-0.10.2-cp38-abi3-manylinux_2_24_aarch64.whl", hash = "sha256:86c1ef6cefccf23e1b65a8686054aea6498af6cbcf370c35a92cd6f5bc87db11"},
-    {file = "pylance-0.10.2-cp38-abi3-win_amd64.whl", hash = "sha256:cdb776f9c22bd4b488792a40f68c3750b2e06795c053f4beb0356fcf34aab8ad"},
+    {file = "pylance-0.10.4-cp38-abi3-macosx_10_15_x86_64.whl", hash = "sha256:7c55932593a4745fe90db9a84ba1b382715e49995cd7c01876d9c84ba116782d"},
+    {file = "pylance-0.10.4-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:1f7b371eef0a4bc198c8a5513197c077435049dab8b8523f4c1d653d5464462a"},
+    {file = "pylance-0.10.4-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:fc35b0aba98839eed0705f637c5fc13dd7a5f6d98d8e303cecc1bb9f04aa5885"},
+    {file = "pylance-0.10.4-cp38-abi3-manylinux_2_24_aarch64.whl", hash = "sha256:9b947031f3eb81073b60ceb3662613c67bca3fc38a7e2afee1b54f62282b3115"},
+    {file = "pylance-0.10.4-cp38-abi3-win_amd64.whl", hash = "sha256:bed03b5bafbd1c171fcdc2c92f2092092e04a328913792dacf9306cf9a4dc3df"},
 ]
 
 [package.dependencies]
 numpy = ">=1.22"
-pyarrow = ">=12"
+pyarrow = ">=12,<15.0.1"
 
 [package.extras]
 benchmarks = ["pytest-benchmark"]
 dev = ["ruff (==0.2.2)"]
-tests = ["datasets", "duckdb", "ml_dtypes", "pandas", "pillow", "polars[pandas,pyarrow]", "pytest", "tensorflow", "tqdm"]
+tests = ["datasets", "duckdb", "ml-dtypes", "pandas", "pillow", "polars[pandas,pyarrow]", "pytest", "tensorflow", "tqdm"]
 torch = ["torch"]
 
 [[package]]
@@ -8751,4 +8752,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "3.11.7"
-content-hash = "3e42c36392c57d34805a9e438a236b6b39488d606210889b459b5189afc5c6fa"
+content-hash = "5cb8024bc52672c7a90a34cb35f7b75cb8c694ad507d9a08aaa4c28ad1c3e55b"
