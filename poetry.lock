@@ -3422,13 +3422,13 @@ test = ["mypy (>=1.0)", "pytest (>=7.0.0)"]
 
 [[package]]
 name = "momento"
-version = "1.19.1"
+version = "1.20.1"
 description = "SDK for Momento"
 optional = false
-python-versions = ">=3.7,<4.0"
+python-versions = "<4.0,>=3.7"
 files = [
-    {file = "momento-1.19.1-py3-none-any.whl", hash = "sha256:c92602aea530566fb436c9511eee611fa25b703ccbcbc34435ac4950c90b473f"},
-    {file = "momento-1.19.1.tar.gz", hash = "sha256:e2722175f58db70e1c8b10e1e5a854cca403883e2cdc81272878ac23d6ac8558"},
+    {file = "momento-1.20.1-py3-none-any.whl", hash = "sha256:453b2f1629f866d1ebec731894516368412ad8be8155f0b3ff890d497dda3520"},
+    {file = "momento-1.20.1.tar.gz", hash = "sha256:756cd0bd15fabb7b1bebab5e704622f2aeecc5a6029c03b956b51644f30b7820"},
 ]
 
 [package.dependencies]
@@ -8749,4 +8749,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "3.11.7"
-content-hash = "5b137ddbbfab0507f4f930fc39d35c468091115f8bd4f147df3f2fd044280d16"
+content-hash = "697c0003f505470173832f0e50af64ace2933b078f9b7c711ea54ec7fd0bf42f"
