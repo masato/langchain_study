@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{ include = "langchain_study", from = "src" }]
 
 [tool.poetry.dependencies]
-python = "3.11.7"
+python = "3.12.2"
 notebook = "7.1.2"
 openai = "1.14.3"
 langchain = "0.1.7"
