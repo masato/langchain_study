@@ -1328,22 +1328,23 @@ files = [
 
 [[package]]
 name = "duckduckgo-search"
-version = "4.5.0"
+version = "5.2.0"
 description = "Search for words, documents, images, news, maps and text translation using the DuckDuckGo.com search engine."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "duckduckgo_search-4.5.0-py3-none-any.whl", hash = "sha256:0057aee08d0f60bbb69b438b65e771c920cae46a5996f6682fffee38948f6930"},
-    {file = "duckduckgo_search-4.5.0.tar.gz", hash = "sha256:36dd819cf45de7099c7311b17215933b80be74f2f8fdc8595b52d6ac01e23fc2"},
+    {file = "duckduckgo_search-5.2.0-py3-none-any.whl", hash = "sha256:d3b92b28a65e7500b5ced726d2ff7f646f69c4cb41a580c4d110f2ff816f9de3"},
+    {file = "duckduckgo_search-5.2.0.tar.gz", hash = "sha256:041685911beed93e4fdbd1ee5d2ae7655df7563355df81d7d14e09861e2e0262"},
 ]
 
 [package.dependencies]
 click = ">=8.1.7"
-curl-cffi = ">=0.6.1"
-lxml = ">=5.1.0"
+curl-cffi = ">=0.6.2"
+orjson = ">=3.9.15"
 
 [package.extras]
-dev = ["pytest (>=8.0.1)", "ruff (>=0.2.2)"]
+dev = ["mypy (>=1.8.0)", "pytest (>=8.0.1)", "ruff (>=0.3.0)"]
+lxml = ["lxml (>=5.1.0)"]
 
 [[package]]
 name = "effdet"
@@ -8749,4 +8750,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "3.11.7"
-content-hash = "2b81ce7881ebe86526bdf630e2f59971b63bbb3d738c8f05fea393c06e73a1f8"
+content-hash = "fbc91add327fbf3b0d1d3a0378f24c304311da4094099efee679b35a85c8ad59"
