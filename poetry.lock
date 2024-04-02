@@ -2752,16 +2752,16 @@ adal = ["adal (>=1.0.2)"]
 
 [[package]]
 name = "lancedb"
-version = "0.6.5"
+version = "0.6.6"
 description = "lancedb"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "lancedb-0.6.5-cp38-abi3-macosx_10_15_x86_64.whl", hash = "sha256:29a341a148ba53de9e72af5ac2f8727073bdb5b9b62af12303d31f487df179cf"},
-    {file = "lancedb-0.6.5-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:c5da69063b50bb4329db1d71534b8c6983f9c50b2f6ec34cb84b3d85cc52dafd"},
-    {file = "lancedb-0.6.5-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:524245eb5a9ab5912e69a74af81737f4513ff426b9670333561cde19dcc7e0a1"},
-    {file = "lancedb-0.6.5-cp38-abi3-manylinux_2_24_aarch64.whl", hash = "sha256:769dee182897ceb9cf17bb19fe8c871d342b4248925bf8b4d879d5b48f397228"},
-    {file = "lancedb-0.6.5-cp38-abi3-win_amd64.whl", hash = "sha256:e3b294ca0250a5ab5d25954a4d38d7c3845feccb9df0f257182bb3e32b38833d"},
+    {file = "lancedb-0.6.6-cp38-abi3-macosx_10_15_x86_64.whl", hash = "sha256:d0791e233fa1460b5ab0464243833735dfb73b46ae4fc1f2a40d3fcd6990e7e7"},
+    {file = "lancedb-0.6.6-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:68e239d8a2f559b4eba75989fe2cec80eacc070639cab3d7a45fe5b687fb3689"},
+    {file = "lancedb-0.6.6-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:da170cc97071a869a7cf03ef2382fc7226974972e88a893c0a777b147b7ceb4c"},
+    {file = "lancedb-0.6.6-cp38-abi3-manylinux_2_24_aarch64.whl", hash = "sha256:05fd70a1a0a260bcdd55e866801a64f3a39269b58fd47d2f66f4ff7005142c7e"},
+    {file = "lancedb-0.6.6-cp38-abi3-win_amd64.whl", hash = "sha256:923d24730ede4e5d3d84bdb13b62e8d0a345ba864158f69a2f321b8e970c6c38"},
 ]
 
 [package.dependencies]
@@ -2771,7 +2771,7 @@ click = ">=8.1.7"
 deprecation = "*"
 overrides = ">=0.7"
 pydantic = ">=1.10"
-pylance = "0.10.5"
+pylance = "0.10.6"
 pyyaml = ">=6.0"
 ratelimiter = ">=1.0,<2.0"
 requests = ">=2.31.0"
@@ -5502,16 +5502,17 @@ tests = ["coverage[toml] (==5.0.4)", "pytest (>=6.0.0,<7.0.0)"]
 
 [[package]]
 name = "pylance"
-version = "0.10.5"
+version = "0.10.6"
 description = "python wrapper for Lance columnar format"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "pylance-0.10.5-cp38-abi3-macosx_10_15_x86_64.whl", hash = "sha256:341048e7c0528c15dfe28a4db0f895661e26c57c447463a398d43b1db7537816"},
-    {file = "pylance-0.10.5-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:a041ca39c613f39a0c566b0c58b28a2b55fad393ab79cae7dbe3b3abdc1daf0d"},
-    {file = "pylance-0.10.5-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:b57aebe73da3d9c2289ccdea0fb36e8cbadca1e444f0e7c8b108a3f7965db7a7"},
-    {file = "pylance-0.10.5-cp38-abi3-manylinux_2_24_aarch64.whl", hash = "sha256:3ffd9a635e542d93e80aeabe9f3d72f31f934eebdfcb682678f0a6d5e37ca6d6"},
-    {file = "pylance-0.10.5-cp38-abi3-win_amd64.whl", hash = "sha256:8141e7a5fb0039dfbac833d947246f86807d7ed3b534e96e9b9cc2bc53ef1d55"},
+    {file = "pylance-0.10.6-cp38-abi3-macosx_10_15_x86_64.whl", hash = "sha256:b05c52892e20bc113365d7ebf8a46dfce77f73e65c3f0825d3e9cb294ac2b0c4"},
+    {file = "pylance-0.10.6-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:4d4d08c781285e8e5b3298c377aa9d16ea0554ddac0dc3523bdf46c694020cb9"},
+    {file = "pylance-0.10.6-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:6e7f7c8bb534b6c55a756ec4b8a05ad435838f4a51d3ddd14e1e6426dfcb86dd"},
+    {file = "pylance-0.10.6-cp38-abi3-manylinux_2_24_aarch64.whl", hash = "sha256:80bfec4dd15939c659bf08f5889f6772f7430f5e7a2fb6df45c380479d4d88f3"},
+    {file = "pylance-0.10.6-cp38-abi3-manylinux_2_28_x86_64.whl", hash = "sha256:418a39d1f8d58d610a1ab61d890246158d71dd947fb62cbf89a8e1830f93a2a2"},
+    {file = "pylance-0.10.6-cp38-abi3-win_amd64.whl", hash = "sha256:d0b06bdafda2191ec43f05d08c494772814246b306a639ea8772cbf5165c528c"},
 ]
 
 [package.dependencies]
@@ -8793,4 +8794,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "3.11.7"
-content-hash = "b9d55de3e367cedb094cdf616e4f56ae7304d0282c88cc2c73311531fcad7d71"
+content-hash = "4f3f8dc36ee86552850d2ba2be8b910deb3cd5f09db86098ec031e09a07f8baf"
