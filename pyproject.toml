@@ -32,7 +32,7 @@ langchain-experimental = "0.0.51"
 lancedb = "0.6.8"
 pandas = "2.2.2"
 python-dotenv = "1.0.1"
-pyarrow = "14.0.2"
+pyarrow = "15.0.2"
 unstructured = { extras = ["local-inference"], version = "0.13.2" }
 
 
