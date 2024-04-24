@@ -680,13 +680,13 @@ pycparser = "*"
 
 [[package]]
 name = "chainlit"
-version = "1.0.504"
+version = "1.0.505"
 description = "Build Conversational AI."
 optional = false
 python-versions = "<4.0.0,>=3.8.1"
 files = [
-    {file = "chainlit-1.0.504-py3-none-any.whl", hash = "sha256:9978cdf0337799e7e3eff162082a2178ad9bc16a0bbdb3a6bd11824f18efe97a"},
-    {file = "chainlit-1.0.504.tar.gz", hash = "sha256:164386eab3a506c53889d4c9bb75f990b8bca446666a19e84e4e6fd89a3125aa"},
+    {file = "chainlit-1.0.505-py3-none-any.whl", hash = "sha256:447ac128d9c3e8b10858e24a453db394ca81b11ba057eb8cf7ab56e9fa01add4"},
+    {file = "chainlit-1.0.505.tar.gz", hash = "sha256:4fe552783c2c9511ad4c05ef2c38deb0a86dea0cfd8bfa67bb744bb383defbf0"},
 ]
 
 [package.dependencies]
@@ -699,7 +699,7 @@ fastapi-socketio = ">=0.0.10,<0.0.11"
 filetype = ">=1.2.0,<2.0.0"
 httpx = ">=0.23.0"
 lazify = ">=0.4.0,<0.5.0"
-literalai = "0.0.504"
+literalai = "0.0.507"
 nest-asyncio = ">=1.5.6,<2.0.0"
 packaging = ">=23.1,<24.0"
 pydantic = ">=1,<3"
@@ -3016,12 +3016,12 @@ files = [
 
 [[package]]
 name = "literalai"
-version = "0.0.504"
+version = "0.0.507"
 description = "An SDK for observability in Python applications"
 optional = false
 python-versions = "*"
 files = [
-    {file = "literalai-0.0.504.tar.gz", hash = "sha256:cc880dbe5c0332620789e6cfce6f4ddc10c69659d65b2304cd8b172e4672bda0"},
+    {file = "literalai-0.0.507.tar.gz", hash = "sha256:bd13f6d5a8a05c113c96af4b8955b67a8dffcf0ae4e152c3878217cfe562f2f9"},
 ]
 
 [package.dependencies]
@@ -8819,4 +8819,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "3.11.7"
-content-hash = "5dfdfdd698a79b2aa29bf180ab2d95d237c34c07637d965834081f6fab9ed18c"
+content-hash = "9fa6a84857895504d5120b7d698547fcc1bf71d6bd512d1ccf0fb91de52734f1"
