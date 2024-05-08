@@ -2819,17 +2819,17 @@ adal = ["adal (>=1.0.2)"]
 
 [[package]]
 name = "lancedb"
-version = "0.6.11"
+version = "0.6.12"
 description = "lancedb"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "lancedb-0.6.11-cp38-abi3-macosx_10_15_x86_64.whl", hash = "sha256:79dbc2a79dac7b843e328a3b7eecb1b42f38ad524742111a38efbeaa1f58ddfe"},
-    {file = "lancedb-0.6.11-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:bfc6661e1fe5dd75346b4a1980243b4ccecd2b0ad991f8becc6e506a608c2d8a"},
-    {file = "lancedb-0.6.11-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:0998c2dae676c24b95d492358f80ef6e5100b86335b96bf402af3f28f7ec4f3b"},
-    {file = "lancedb-0.6.11-cp38-abi3-manylinux_2_24_aarch64.whl", hash = "sha256:b6b289599c4c6a61a70da89d4c3201abec7483d0e03573506014af2dcddfe0c4"},
-    {file = "lancedb-0.6.11-cp38-abi3-manylinux_2_28_x86_64.whl", hash = "sha256:d789d5a181c4bc42650567cb63ce2772ed902046b08e8e401970df284a4df1c1"},
-    {file = "lancedb-0.6.11-cp38-abi3-win_amd64.whl", hash = "sha256:ea12fc94545afb03933d080cce593491e593ab95cbfddf05ab7183bce2bc8d62"},
+    {file = "lancedb-0.6.12-cp38-abi3-macosx_10_15_x86_64.whl", hash = "sha256:ff9f292817ebbd5d87722adae7d33cc22b3057670cd9936e49da684237910297"},
+    {file = "lancedb-0.6.12-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:8fc289b564ceafdebd9b4fd39e80a44306349257910c909c11adb047da7673ef"},
+    {file = "lancedb-0.6.12-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:d894c340d795e3698ceebb8781fe9071b45d0216df2d44aeab5fe9d6a2de069d"},
+    {file = "lancedb-0.6.12-cp38-abi3-manylinux_2_24_aarch64.whl", hash = "sha256:cdaa39219188cb80d416d2c87cbdcac97f3e08e0916036f8e31762576383a9e7"},
+    {file = "lancedb-0.6.12-cp38-abi3-manylinux_2_28_x86_64.whl", hash = "sha256:0a267d1f9253348c7905e1590d6ee389956869cb1b28437c84ea49bc63c34e39"},
+    {file = "lancedb-0.6.12-cp38-abi3-win_amd64.whl", hash = "sha256:ea016ef9a4034837d84fd04d3fdc8683069056124725a31040fba251fcd07451"},
 ]
 
 [package.dependencies]
@@ -8984,4 +8984,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "3.11.7"
-content-hash = "56d356bfa0de78e49046f25df40bc95cbf4b4f36233880c68573e2b78cb638f1"
+content-hash = "6ff5cce9e6a1142e5d3504776e8a676fa4ee2f4d5e7fd4a698260ec4f7ec18c2"
