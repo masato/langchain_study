@@ -2819,17 +2819,17 @@ adal = ["adal (>=1.0.2)"]
 
 [[package]]
 name = "lancedb"
-version = "0.6.12"
+version = "0.6.13"
 description = "lancedb"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "lancedb-0.6.12-cp38-abi3-macosx_10_15_x86_64.whl", hash = "sha256:ff9f292817ebbd5d87722adae7d33cc22b3057670cd9936e49da684237910297"},
-    {file = "lancedb-0.6.12-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:8fc289b564ceafdebd9b4fd39e80a44306349257910c909c11adb047da7673ef"},
-    {file = "lancedb-0.6.12-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:d894c340d795e3698ceebb8781fe9071b45d0216df2d44aeab5fe9d6a2de069d"},
-    {file = "lancedb-0.6.12-cp38-abi3-manylinux_2_24_aarch64.whl", hash = "sha256:cdaa39219188cb80d416d2c87cbdcac97f3e08e0916036f8e31762576383a9e7"},
-    {file = "lancedb-0.6.12-cp38-abi3-manylinux_2_28_x86_64.whl", hash = "sha256:0a267d1f9253348c7905e1590d6ee389956869cb1b28437c84ea49bc63c34e39"},
-    {file = "lancedb-0.6.12-cp38-abi3-win_amd64.whl", hash = "sha256:ea016ef9a4034837d84fd04d3fdc8683069056124725a31040fba251fcd07451"},
+    {file = "lancedb-0.6.13-cp38-abi3-macosx_10_15_x86_64.whl", hash = "sha256:4667353ca7fa187e94cb0ca4c5f9577d65eb5160f6f3fe9e57902d86312c3869"},
+    {file = "lancedb-0.6.13-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:2e22533fe6f6b2d7037dcdbbb4019a62402bbad4ce18395be68f4aa007bf8bc0"},
+    {file = "lancedb-0.6.13-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:837eaceafb87e3ae4c261eef45c4f73715f892a36165572c3da621dbdb45afcf"},
+    {file = "lancedb-0.6.13-cp38-abi3-manylinux_2_24_aarch64.whl", hash = "sha256:61af2d72b2a2f0ea419874c3f32760fe5e51530da3be2d65251a0e6ded74419b"},
+    {file = "lancedb-0.6.13-cp38-abi3-manylinux_2_28_x86_64.whl", hash = "sha256:31b24e57ee313f4ce6255e45d42e8bee19b90ddcd13a9e07030ac04f76e7dfde"},
+    {file = "lancedb-0.6.13-cp38-abi3-win_amd64.whl", hash = "sha256:b851182d8492b1e5b57a441af64c95da65ca30b045d6618dc7d203c6d60d70fa"},
 ]
 
 [package.dependencies]
@@ -2842,7 +2842,7 @@ pylance = "0.10.12"
 ratelimiter = ">=1.0,<2.0"
 requests = ">=2.31.0"
 retry = ">=0.9.2"
-semver = ">=3.0"
+semver = "*"
 tqdm = ">=4.27.0"
 
 [package.extras]
@@ -8985,4 +8985,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "3.11.7"
-content-hash = "9716de46272eddff8647a6ca18ef7c334b3f66cc26bde4ff9b0137904c685ed0"
+content-hash = "8131cab5764724b32c5301b14bb42f6e75443dfd986a2b1a33cacce25bcdeb4a"
