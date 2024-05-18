@@ -8173,13 +8173,13 @@ files = [
 
 [[package]]
 name = "unstructured"
-version = "0.13.7"
+version = "0.14.0"
 description = "A library that prepares raw documents for downstream ML tasks."
 optional = false
 python-versions = "<3.12,>=3.9.0"
 files = [
-    {file = "unstructured-0.13.7-py3-none-any.whl", hash = "sha256:a3d8f3037cb3063661531c6ecc04aca6df93c293ba06e36d67ffc70857a6f208"},
-    {file = "unstructured-0.13.7.tar.gz", hash = "sha256:5d59161d353b7006d8c6ee6f1a39154a5a11a5aaa258aac3fe90a8d44016aa6c"},
+    {file = "unstructured-0.14.0-py3-none-any.whl", hash = "sha256:1989fde373713db2dcf0628305dee1543728b1204897c5218268ee8a523b2728"},
+    {file = "unstructured-0.14.0.tar.gz", hash = "sha256:611e838abb2f5257c22c22c107a7c8707edb2ce642f178272cd28944ab7188cf"},
 ]
 
 [package.dependencies]
@@ -8966,4 +8966,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "3.11.7"
-content-hash = "ea908eefcfef58b474e7d80afff72d0b67722b9e648e6c3ed6002a7c730b1dfe"
+content-hash = "e5bbe1bd326020aaf26e7d0e08818c5187c4f7e1d0f42c0e36202b07d81b28df"
