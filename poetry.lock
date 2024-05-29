@@ -8162,13 +8162,13 @@ files = [
 
 [[package]]
 name = "unstructured"
-version = "0.14.2"
+version = "0.14.3"
 description = "A library that prepares raw documents for downstream ML tasks."
 optional = false
 python-versions = "<3.13,>=3.9.0"
 files = [
-    {file = "unstructured-0.14.2-py3-none-any.whl", hash = "sha256:2d00463d6406c2a07d54c049e4d7323d2f5c112752f060d6f83bfbb335e676f1"},
-    {file = "unstructured-0.14.2.tar.gz", hash = "sha256:fd1889ea6630b0172c769efc2afc607562707f41f94eb6d734df1a987a1a4be0"},
+    {file = "unstructured-0.14.3-py3-none-any.whl", hash = "sha256:9f94607aaae66a543315062bf10bd3a196b5809d2747e15567d1a814764bcf8c"},
+    {file = "unstructured-0.14.3.tar.gz", hash = "sha256:57156e67edf91d1f1a3c13451ca0dd834a8108090eca3cd2e3a99eb045b18612"},
 ]
 
 [package.dependencies]
@@ -8234,6 +8234,7 @@ elasticsearch = ["elasticsearch"]
 embed-huggingface = ["huggingface", "langchain-community", "sentence-transformers"]
 embed-octoai = ["openai", "tiktoken"]
 embed-vertexai = ["langchain", "langchain-community", "langchain-google-vertexai"]
+embed-voyageai = ["langchain", "langchain-voyageai"]
 epub = ["pypandoc"]
 gcs = ["bs4", "fsspec", "gcsfs"]
 github = ["pygithub (>1.58.0)"]
@@ -8963,4 +8964,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "jaraco.test", "more
 [metadata]
 lock-version = "2.0"
 python-versions = "3.11.7"
-content-hash = "52108dd7f0e5d66fd1492c461033c1f76cdfc8eb0ac2759ec2225b4cce0fe2ef"
+content-hash = "c259455b2d0ce3eeb589bc6d7c9709debe288f2dfeefc431a6f3ab18b48eed51"
