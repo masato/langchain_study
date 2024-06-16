@@ -7442,13 +7442,13 @@ widechars = ["wcwidth"]
 
 [[package]]
 name = "taskipy"
-version = "1.12.2"
+version = "1.13.0"
 description = "tasks runner for python projects"
 optional = false
-python-versions = ">=3.6,<4.0"
+python-versions = "<4.0,>=3.6"
 files = [
-    {file = "taskipy-1.12.2-py3-none-any.whl", hash = "sha256:ffdbb0bb0db54c0ec5c424610a3a087eea22706d4d1f6e3e8b4f12ebba05f98f"},
-    {file = "taskipy-1.12.2.tar.gz", hash = "sha256:eadfdc20d6bb94d8018eda32f1dbf584cf4aa6cffb71ba5cc2de20d344f8c4fb"},
+    {file = "taskipy-1.13.0-py3-none-any.whl", hash = "sha256:56f42b7e508d9aed2c7b6365f8d3dab62dbd0c768c1ab606c819da4fc38421f7"},
+    {file = "taskipy-1.13.0.tar.gz", hash = "sha256:2b52f0257958fed151f1340f7de93fcf0848f7a358ad62ba05c31c2ca04f89fe"},
 ]
 
 [package.dependencies]
@@ -8945,4 +8945,4 @@ test = ["big-O", "importlib-resources", "jaraco.functools", "jaraco.itertools", 
 [metadata]
 lock-version = "2.0"
 python-versions = "3.11.7"
-content-hash = "929b12df110dde596e86863aa93acb7a52fdf44c43145672105b118889b3be9c"
+content-hash = "23ca07c5f8f641608aa60033eeb305b77c03f97fc8978eb55e7b25dbc1677de5"
