@@ -874,13 +874,13 @@ numpy = "*"
 
 [[package]]
 name = "chromadb"
-version = "0.5.0"
+version = "0.5.3"
 description = "Chroma."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "chromadb-0.5.0-py3-none-any.whl", hash = "sha256:8193dc65c143b61d8faf87f02c44ecfa778d471febd70de517f51c5d88a06009"},
-    {file = "chromadb-0.5.0.tar.gz", hash = "sha256:7954af614a9ff7b2902ddbd0a162f33f7ec0669e2429903905c4f7876d1f766f"},
+    {file = "chromadb-0.5.3-py3-none-any.whl", hash = "sha256:b3874f08356e291c68c6d2e177db472cd51f22f3af7b9746215b748fd1e29982"},
+    {file = "chromadb-0.5.3.tar.gz", hash = "sha256:05d887f56a46b2e0fc6ac5ab979503a27b9ee50d5ca9e455f83b2fb9840cd026"},
 ]
 
 [package.dependencies]
@@ -889,10 +889,11 @@ build = ">=1.0.3"
 chroma-hnswlib = "0.7.3"
 fastapi = ">=0.95.2"
 grpcio = ">=1.58.0"
+httpx = ">=0.27.0"
 importlib-resources = "*"
 kubernetes = ">=28.1.0"
 mmh3 = ">=4.0.1"
-numpy = ">=1.22.5"
+numpy = ">=1.22.5,<2.0.0"
 onnxruntime = ">=1.14.1"
 opentelemetry-api = ">=1.2.0"
 opentelemetry-exporter-otlp-proto-grpc = ">=1.2.0"
@@ -8945,4 +8946,4 @@ test = ["big-O", "importlib-resources", "jaraco.functools", "jaraco.itertools", 
 [metadata]
 lock-version = "2.0"
 python-versions = "3.11.7"
-content-hash = "0c2381b18a158fb98119274793b4683c4ca0fe70d5041b1bcff689371b914c09"
+content-hash = "d96fbd4121e10d3f3286b6d4278dbae6a889c8ca93c1d602041f621d43396501"
