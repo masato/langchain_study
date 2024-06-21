@@ -40,7 +40,7 @@ unstructured = { extras = ["local-inference"], version = "0.14.6" }
 pytest = "7.4.4"
 taskipy = "1.13.0"
 mypy = "1.10.0"
-ruff = "0.4.9"
+ruff = "0.4.10"
 
 [tool.mypy]
 python_version = "3.11"
