@@ -680,13 +680,13 @@ pycparser = "*"
 
 [[package]]
 name = "chainlit"
-version = "1.1.302"
+version = "1.1.304"
 description = "Build Conversational AI."
 optional = false
 python-versions = "<4.0.0,>=3.8.1"
 files = [
-    {file = "chainlit-1.1.302-py3-none-any.whl", hash = "sha256:20fbf5d7e70933552d4a4ebdd2ceefbee179138f798f4dc9160a249842f7d5fd"},
-    {file = "chainlit-1.1.302.tar.gz", hash = "sha256:513e4c126a1db31ea717adf5a7a89a46a42b82eddcdf1d4b6e4e33a9963435ce"},
+    {file = "chainlit-1.1.304-py3-none-any.whl", hash = "sha256:f8f304bbb9e435b964d1d236cc31b26be0845d1abb7a0be81ef02e8ba1362040"},
+    {file = "chainlit-1.1.304.tar.gz", hash = "sha256:7b2add4696bb5e2478b36f8d602a220db9c9f7bce313a415d814f8bc323e1f15"},
 ]
 
 [package.dependencies]
@@ -8947,4 +8947,4 @@ test = ["big-O", "importlib-resources", "jaraco.functools", "jaraco.itertools", 
 [metadata]
 lock-version = "2.0"
 python-versions = "3.11.7"
-content-hash = "6f69747adcba9e60a629352525f8771b2921b6c65b7c1a9bd958edd91a7295ed"
+content-hash = "99d74385240f8ff4cf194fc2b70dd1aed8616d2708b71a0791aac6b51deeb69c"
