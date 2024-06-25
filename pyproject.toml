@@ -39,7 +39,7 @@ unstructured = { extras = ["local-inference"], version = "0.14.8" }
 [tool.poetry.group.dev.dependencies]
 pytest = "7.4.4"
 taskipy = "1.13.0"
-mypy = "1.10.0"
+mypy = "1.10.1"
 ruff = "0.4.10"
 
 [tool.mypy]
