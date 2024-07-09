@@ -8171,13 +8171,13 @@ files = [
 
 [[package]]
 name = "unstructured"
-version = "0.14.9"
+version = "0.14.10"
 description = "A library that prepares raw documents for downstream ML tasks."
 optional = false
 python-versions = "<3.13,>=3.9.0"
 files = [
-    {file = "unstructured-0.14.9-py3-none-any.whl", hash = "sha256:1bdb461c8595a7dd637372cffc2e03b3b7c7eb5201262f77063757a0ba971c2c"},
-    {file = "unstructured-0.14.9.tar.gz", hash = "sha256:52b651d28746172e03d6352e2ab5eb5aec19e9f4bf5ddb77110f11708798b002"},
+    {file = "unstructured-0.14.10-py3-none-any.whl", hash = "sha256:127052de54f0c49cd7c4432dd5e6c1f3fe0b8521192e32b126a0758dcc06da65"},
+    {file = "unstructured-0.14.10.tar.gz", hash = "sha256:7076567a27e204ddbe129eb99e66bcc90c1cae6c4d4138506f6d555a527be73f"},
 ]
 
 [package.dependencies]
@@ -8202,6 +8202,7 @@ pdf2image = {version = "*", optional = true, markers = "extra == \"local-inferen
 "pdfminer.six" = {version = "*", optional = true, markers = "extra == \"local-inference\""}
 pikepdf = {version = "*", optional = true, markers = "extra == \"local-inference\""}
 pillow-heif = {version = "*", optional = true, markers = "extra == \"local-inference\""}
+psutil = "*"
 pypandoc = {version = "*", optional = true, markers = "extra == \"local-inference\""}
 pypdf = {version = "*", optional = true, markers = "extra == \"local-inference\""}
 pytesseract = {version = "*", optional = true, markers = "extra == \"local-inference\""}
@@ -8280,6 +8281,7 @@ s3 = ["fsspec", "s3fs"]
 salesforce = ["simple-salesforce"]
 sftp = ["fsspec", "paramiko"]
 sharepoint = ["Office365-REST-Python-Client", "msal"]
+singlestore = ["singlestoredb"]
 slack = ["slack-sdk"]
 tsv = ["pandas"]
 weaviate = ["weaviate-client"]
@@ -8975,4 +8977,4 @@ test = ["big-O", "importlib-resources", "jaraco.functools", "jaraco.itertools", 
 [metadata]
 lock-version = "2.0"
 python-versions = "3.11.7"
-content-hash = "873e33bf56d43a02ece7793931c5a91c1af65a6ac6ff597b0aee5a7193635bf8"
+content-hash = "775644e8e24191cd12cd51a2fb46a45c07e5e4b75cf92eb999931d64580550ba"
