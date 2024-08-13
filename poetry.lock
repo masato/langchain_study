@@ -2981,13 +2981,13 @@ tiktoken = ">=0.5.2,<1"
 
 [[package]]
 name = "langchainhub"
-version = "0.1.20"
+version = "0.1.21"
 description = "The LangChain Hub API client"
 optional = false
 python-versions = "<4.0,>=3.8.1"
 files = [
-    {file = "langchainhub-0.1.20-py3-none-any.whl", hash = "sha256:b3cbb5b2d7d6f9c3f89748bcc74424d8030ed4ebca58b5f44e0b6d9f111e33eb"},
-    {file = "langchainhub-0.1.20.tar.gz", hash = "sha256:499fa8958233071f35750987f325005d16241bebd455163955b607c195c37f25"},
+    {file = "langchainhub-0.1.21-py3-none-any.whl", hash = "sha256:1cc002dc31e0d132a776afd044361e2b698743df5202618cf2bad399246b895f"},
+    {file = "langchainhub-0.1.21.tar.gz", hash = "sha256:723383b3964a47dbaea6ad5d0ef728accefbc9d2c07480e800bdec43510a8c10"},
 ]
 
 [package.dependencies]
@@ -9043,4 +9043,4 @@ test = ["big-O", "importlib-resources", "jaraco.functools", "jaraco.itertools", 
 [metadata]
 lock-version = "2.0"
 python-versions = "3.11.7"
-content-hash = "b29fb98cf64d329954c21401c40bab52439c803907b834b7599b71e32ce91ab2"
+content-hash = "4592a56d073b6e0dec45687ddda93d27f6203a85f75d65f690d735949c2c8e5e"
