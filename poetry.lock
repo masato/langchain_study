@@ -5936,21 +5936,6 @@ files = [
 ]
 
 [[package]]
-name = "pytesseract"
-version = "0.3.13"
-description = "Python-tesseract is a python wrapper for Google's Tesseract-OCR"
-optional = false
-python-versions = ">=3.8"
-files = [
-    {file = "pytesseract-0.3.13-py3-none-any.whl", hash = "sha256:7a99c6c2ac598360693d83a416e36e0b33a67638bb9d77fdcac094a3589d4b34"},
-    {file = "pytesseract-0.3.13.tar.gz", hash = "sha256:4bf5f880c99406f52a3cfc2633e42d9dc67615e69d8a509d74867d3baddb5db9"},
-]
-
-[package.dependencies]
-packaging = ">=21.3"
-Pillow = ">=8.0.0"
-
-[[package]]
 name = "pytest"
 version = "7.4.4"
 description = "pytest: simple powerful testing with Python"
@@ -6100,18 +6085,19 @@ typing-extensions = ">=4.9.0"
 
 [[package]]
 name = "python-pptx"
-version = "0.6.23"
-description = "Generate and manipulate Open XML PowerPoint (.pptx) files"
+version = "1.0.2"
+description = "Create, read, and update PowerPoint 2007+ (.pptx) files."
 optional = false
-python-versions = "*"
+python-versions = ">=3.8"
 files = [
-    {file = "python-pptx-0.6.23.tar.gz", hash = "sha256:587497ff28e779ab18dbb074f6d4052893c85dedc95ed75df319364f331fedee"},
-    {file = "python_pptx-0.6.23-py3-none-any.whl", hash = "sha256:dd0527194627a2b7cc05f3ba23ecaa2d9a0d5ac9b6193a28ed1b7a716f4217d4"},
+    {file = "python_pptx-1.0.2-py3-none-any.whl", hash = "sha256:160838e0b8565a8b1f67947675886e9fea18aa5e795db7ae531606d68e785cba"},
+    {file = "python_pptx-1.0.2.tar.gz", hash = "sha256:479a8af0eaf0f0d76b6f00b0887732874ad2e3188230315290cd1f9dd9cc7095"},
 ]
 
 [package.dependencies]
 lxml = ">=3.1.0"
 Pillow = ">=3.3.2"
+typing-extensions = ">=4.9.0"
 XlsxWriter = ">=0.5.7"
 
 [[package]]
@@ -8246,13 +8232,13 @@ files = [
 
 [[package]]
 name = "unstructured"
-version = "0.15.0"
+version = "0.15.5"
 description = "A library that prepares raw documents for downstream ML tasks."
 optional = false
 python-versions = "<3.13,>=3.9.0"
 files = [
-    {file = "unstructured-0.15.0-py3-none-any.whl", hash = "sha256:43538e0463aec3741eef06eaf69fc27f6fdaffa7376816c797cb25abb9b55b45"},
-    {file = "unstructured-0.15.0.tar.gz", hash = "sha256:b75deb8e46dffbe1c6f82936810a31ab9516923c3a60bd01821d7701fa13b628"},
+    {file = "unstructured-0.15.5-py3-none-any.whl", hash = "sha256:bf12e372a3403ce410556bc161f058c47eb154b82b3d598b46e5a92920867ab3"},
+    {file = "unstructured-0.15.5.tar.gz", hash = "sha256:284f0610807e7603cba911a2c24fd535e061996f2943d783204b66f24e18d702"},
 ]
 
 [package.dependencies]
@@ -8280,12 +8266,11 @@ pillow-heif = {version = "*", optional = true, markers = "extra == \"local-infer
 psutil = "*"
 pypandoc = {version = "*", optional = true, markers = "extra == \"local-inference\""}
 pypdf = {version = "*", optional = true, markers = "extra == \"local-inference\""}
-pytesseract = {version = "*", optional = true, markers = "extra == \"local-inference\""}
 python-docx = {version = ">=1.1.2", optional = true, markers = "extra == \"local-inference\""}
 python-iso639 = "*"
 python-magic = "*"
 python-oxmsg = {version = "*", optional = true, markers = "extra == \"local-inference\""}
-python-pptx = {version = "<=0.6.23", optional = true, markers = "extra == \"local-inference\""}
+python-pptx = {version = ">=1.0.1", optional = true, markers = "extra == \"local-inference\""}
 rapidfuzz = "*"
 requests = "*"
 tabulate = "*"
@@ -8299,14 +8284,14 @@ xlrd = {version = "*", optional = true, markers = "extra == \"local-inference\""
 
 [package.extras]
 airtable = ["pyairtable"]
-all-docs = ["effdet", "google-cloud-vision", "markdown", "networkx", "onnx", "openpyxl", "pandas", "pdf2image", "pdfminer.six", "pikepdf", "pillow-heif", "pypandoc", "pypdf", "pytesseract", "python-docx (>=1.1.2)", "python-oxmsg", "python-pptx (<=0.6.23)", "unstructured-inference (==0.7.36)", "unstructured.pytesseract (>=0.3.12)", "xlrd"]
-astra = ["astrapy"]
+all-docs = ["effdet", "google-cloud-vision", "markdown", "networkx", "onnx", "openpyxl", "pandas", "pdf2image", "pdfminer.six", "pikepdf", "pillow-heif", "pypandoc", "pypdf", "python-docx (>=1.1.2)", "python-oxmsg", "python-pptx (>=1.0.1)", "unstructured-inference (==0.7.36)", "unstructured.pytesseract (>=0.3.12)", "xlrd"]
+astradb = ["astrapy"]
 azure = ["adlfs", "fsspec"]
 azure-cognitive-search = ["azure-search-documents"]
 bedrock = ["boto3", "langchain-community"]
 biomed = ["bs4"]
 box = ["boxfs", "fsspec"]
-chroma = ["chromadb", "importlib-metadata (>=7.1.0)", "typer (<=0.9.0)"]
+chroma = ["chromadb", "importlib-metadata (>=8.2.0)", "tenacity (==8.5.0)", "typer (<=0.9.0)"]
 clarifai = ["clarifai"]
 confluence = ["atlassian-python-api"]
 csv = ["pandas"]
@@ -8317,7 +8302,7 @@ doc = ["python-docx (>=1.1.2)"]
 docx = ["python-docx (>=1.1.2)"]
 dropbox = ["dropboxdrivefs", "fsspec"]
 elasticsearch = ["elasticsearch[async]"]
-embed-huggingface = ["huggingface", "langchain-community", "sentence-transformers"]
+embed-huggingface = ["langchain-huggingface"]
 embed-octoai = ["openai", "tiktoken"]
 embed-vertexai = ["langchain", "langchain-community", "langchain-google-vertexai"]
 embed-voyageai = ["langchain", "langchain-voyageai"]
@@ -8328,26 +8313,26 @@ gitlab = ["python-gitlab"]
 google-drive = ["google-api-python-client"]
 hubspot = ["hubspot-api-client", "urllib3"]
 huggingface = ["langdetect", "sacremoses", "sentencepiece", "torch", "transformers"]
-image = ["effdet", "google-cloud-vision", "onnx", "pdf2image", "pdfminer.six", "pikepdf", "pillow-heif", "pypdf", "pytesseract", "unstructured-inference (==0.7.36)", "unstructured.pytesseract (>=0.3.12)"]
+image = ["effdet", "google-cloud-vision", "onnx", "pdf2image", "pdfminer.six", "pikepdf", "pillow-heif", "pypdf", "unstructured-inference (==0.7.36)", "unstructured.pytesseract (>=0.3.12)"]
 jira = ["atlassian-python-api"]
 kafka = ["confluent-kafka"]
-local-inference = ["effdet", "google-cloud-vision", "markdown", "networkx", "onnx", "openpyxl", "pandas", "pdf2image", "pdfminer.six", "pikepdf", "pillow-heif", "pypandoc", "pypdf", "pytesseract", "python-docx (>=1.1.2)", "python-oxmsg", "python-pptx (<=0.6.23)", "unstructured-inference (==0.7.36)", "unstructured.pytesseract (>=0.3.12)", "xlrd"]
+local-inference = ["effdet", "google-cloud-vision", "markdown", "networkx", "onnx", "openpyxl", "pandas", "pdf2image", "pdfminer.six", "pikepdf", "pillow-heif", "pypandoc", "pypdf", "python-docx (>=1.1.2)", "python-oxmsg", "python-pptx (>=1.0.1)", "unstructured-inference (==0.7.36)", "unstructured.pytesseract (>=0.3.12)", "xlrd"]
 md = ["markdown"]
 mongodb = ["pymongo"]
 msg = ["python-oxmsg"]
 notion = ["htmlBuilder", "notion-client"]
 odt = ["pypandoc", "python-docx (>=1.1.2)"]
 onedrive = ["Office365-REST-Python-Client", "bs4", "msal"]
-openai = ["langchain-community", "openai", "tiktoken"]
+openai = ["langchain-openai"]
 opensearch = ["opensearch-py"]
 org = ["pypandoc"]
 outlook = ["Office365-REST-Python-Client", "msal"]
-paddleocr = ["unstructured.paddleocr (==2.8.0.1)"]
-pdf = ["effdet", "google-cloud-vision", "onnx", "pdf2image", "pdfminer.six", "pikepdf", "pillow-heif", "pypdf", "pytesseract", "unstructured-inference (==0.7.36)", "unstructured.pytesseract (>=0.3.12)"]
+paddleocr = ["paddlepaddle (==3.0.0b1)", "unstructured.paddleocr (==2.8.0.1)"]
+pdf = ["effdet", "google-cloud-vision", "onnx", "pdf2image", "pdfminer.six", "pikepdf", "pillow-heif", "pypdf", "unstructured-inference (==0.7.36)", "unstructured.pytesseract (>=0.3.12)"]
 pinecone = ["pinecone-client (>=3.7.1)"]
 postgres = ["psycopg2-binary"]
-ppt = ["python-pptx (<=0.6.23)"]
-pptx = ["python-pptx (<=0.6.23)"]
+ppt = ["python-pptx (>=1.0.1)"]
+pptx = ["python-pptx (>=1.0.1)"]
 qdrant = ["qdrant-client"]
 reddit = ["praw"]
 rst = ["pypandoc"]
@@ -9055,4 +9040,4 @@ test = ["big-O", "importlib-resources", "jaraco.functools", "jaraco.itertools", 
 [metadata]
 lock-version = "2.0"
 python-versions = "3.11.7"
-content-hash = "6520b05a6e3146fd09c48e996aad1fd1190c91a0aa82365cbbb6cb01ecf03bc2"
+content-hash = "74d07db1921083219214270174e04ef70c240c72dd6ee26e7c405e4537a0a852"
