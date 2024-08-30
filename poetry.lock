@@ -8312,13 +8312,13 @@ files = [
 
 [[package]]
 name = "unstructured"
-version = "0.15.8"
+version = "0.15.9"
 description = "A library that prepares raw documents for downstream ML tasks."
 optional = false
 python-versions = "<3.13,>=3.9.0"
 files = [
-    {file = "unstructured-0.15.8-py3-none-any.whl", hash = "sha256:dcebb7c81f10f2a80d00e492e92634096c3a0a0d123416e37f020552f4c4b373"},
-    {file = "unstructured-0.15.8.tar.gz", hash = "sha256:f0f2c83a86d754df79b17f40c01a446c6f38ded4c253d1da1c2c0ec22f6ffc37"},
+    {file = "unstructured-0.15.9-py3-none-any.whl", hash = "sha256:ddbb043461cfb9efa1d48a18e62e3b43ff4e0cec25fbf0f28bf345589c1af4d2"},
+    {file = "unstructured-0.15.9.tar.gz", hash = "sha256:de26d0e38bac4aa3ae2950f175d0c53a5ccae5c45806b67f55a4af8dea4c407a"},
 ]
 
 [package.dependencies]
@@ -8349,7 +8349,7 @@ pypdf = {version = "*", optional = true, markers = "extra == \"local-inference\"
 python-docx = {version = ">=1.1.2", optional = true, markers = "extra == \"local-inference\""}
 python-iso639 = "*"
 python-magic = "*"
-python-oxmsg = {version = "*", optional = true, markers = "extra == \"local-inference\""}
+python-oxmsg = "*"
 python-pptx = {version = ">=1.0.1", optional = true, markers = "extra == \"local-inference\""}
 rapidfuzz = "*"
 requests = "*"
@@ -8364,7 +8364,7 @@ xlrd = {version = "*", optional = true, markers = "extra == \"local-inference\""
 
 [package.extras]
 airtable = ["pyairtable"]
-all-docs = ["effdet", "google-cloud-vision", "markdown", "networkx", "onnx", "openpyxl", "pandas", "pdf2image", "pdfminer.six", "pi-heif", "pikepdf", "pypandoc", "pypdf", "python-docx (>=1.1.2)", "python-oxmsg", "python-pptx (>=1.0.1)", "unstructured-inference (==0.7.36)", "unstructured.pytesseract (>=0.3.12)", "xlrd"]
+all-docs = ["effdet", "google-cloud-vision", "markdown", "networkx", "onnx", "openpyxl", "pandas", "pdf2image", "pdfminer.six", "pi-heif", "pikepdf", "pypandoc", "pypdf", "python-docx (>=1.1.2)", "python-pptx (>=1.0.1)", "unstructured-inference (==0.7.36)", "unstructured.pytesseract (>=0.3.12)", "xlrd"]
 astradb = ["astrapy"]
 azure = ["adlfs", "fsspec"]
 azure-cognitive-search = ["azure-search-documents"]
@@ -8397,10 +8397,9 @@ huggingface = ["langdetect", "sacremoses", "sentencepiece", "torch", "transforme
 image = ["effdet", "google-cloud-vision", "onnx", "pdf2image", "pdfminer.six", "pi-heif", "pikepdf", "pypdf", "unstructured-inference (==0.7.36)", "unstructured.pytesseract (>=0.3.12)"]
 jira = ["atlassian-python-api"]
 kafka = ["confluent-kafka"]
-local-inference = ["effdet", "google-cloud-vision", "markdown", "networkx", "onnx", "openpyxl", "pandas", "pdf2image", "pdfminer.six", "pi-heif", "pikepdf", "pypandoc", "pypdf", "python-docx (>=1.1.2)", "python-oxmsg", "python-pptx (>=1.0.1)", "unstructured-inference (==0.7.36)", "unstructured.pytesseract (>=0.3.12)", "xlrd"]
+local-inference = ["effdet", "google-cloud-vision", "markdown", "networkx", "onnx", "openpyxl", "pandas", "pdf2image", "pdfminer.six", "pi-heif", "pikepdf", "pypandoc", "pypdf", "python-docx (>=1.1.2)", "python-pptx (>=1.0.1)", "unstructured-inference (==0.7.36)", "unstructured.pytesseract (>=0.3.12)", "xlrd"]
 md = ["markdown"]
 mongodb = ["pymongo"]
-msg = ["python-oxmsg"]
 notion = ["htmlBuilder", "notion-client"]
 odt = ["pypandoc", "python-docx (>=1.1.2)"]
 onedrive = ["Office365-REST-Python-Client", "bs4", "msal"]
@@ -9135,4 +9134,4 @@ test = ["big-O", "importlib-resources", "jaraco.functools", "jaraco.itertools", 
 [metadata]
 lock-version = "2.0"
 python-versions = "3.11.7"
-content-hash = "2b35900f351be1b86b0dfe85c7a94acde1e6fca053cade2ab0995897482dd42e"
+content-hash = "4bf7e2d857aaacbc7e1332d3d69692728319a1fb54a653ad5aa63b48ca19d5ce"
