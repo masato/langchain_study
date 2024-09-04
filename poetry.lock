@@ -343,17 +343,17 @@ files = [
 
 [[package]]
 name = "asyncer"
-version = "0.0.2"
+version = "0.0.7"
 description = "Asyncer, async and await, focused on developer experience."
 optional = false
-python-versions = ">=3.6.2,<4.0.0"
+python-versions = ">=3.8"
 files = [
-    {file = "asyncer-0.0.2-py3-none-any.whl", hash = "sha256:46e0e1423ce21588350ad425875e81795280b9e1f517e8a389de940b86c348bd"},
-    {file = "asyncer-0.0.2.tar.gz", hash = "sha256:d546c85f3626ebbaf06bb4395db49761c902a61a6ac802b1a74133cab4f7f433"},
+    {file = "asyncer-0.0.7-py3-none-any.whl", hash = "sha256:f0d579d4f67c4ead52ede3a45c854f462cae569058a8a6a68a4ebccac1c335d8"},
+    {file = "asyncer-0.0.7.tar.gz", hash = "sha256:d5e563fb0f56eb87b97257984703658a4f5bbdb52ff851b3e8ed864cc200b1d2"},
 ]
 
 [package.dependencies]
-anyio = ">=3.4.0,<4.0.0"
+anyio = ">=3.4.0,<5.0"
 
 [[package]]
 name = "attrs"
@@ -721,18 +721,18 @@ pycparser = "*"
 
 [[package]]
 name = "chainlit"
-version = "1.1.402"
+version = "1.1.404"
 description = "Build Conversational AI."
 optional = false
-python-versions = "<4.0.0,>=3.8.1"
+python-versions = "<4.0.0,>=3.9"
 files = [
-    {file = "chainlit-1.1.402-py3-none-any.whl", hash = "sha256:f3d16cdb36a0c8724693806f39995ce66cf02cf45d0af741216a49933127cc3a"},
-    {file = "chainlit-1.1.402.tar.gz", hash = "sha256:a3bad14afd6c7f1a50dc085521d09109ed6b5f4c44b7cb861746e6731333e7b4"},
+    {file = "chainlit-1.1.404-py3-none-any.whl", hash = "sha256:0a1760dd1cdc107d1d0dabfb25d7b67fbbcba06dfe9dfe1b0f9f3c5d64f3b033"},
+    {file = "chainlit-1.1.404.tar.gz", hash = "sha256:7d74fa9ae260193a918c29cd28dcdbae4583a5ccf95642a292efc3c04f1dcfcf"},
 ]
 
 [package.dependencies]
 aiofiles = ">=23.1.0,<24.0.0"
-asyncer = ">=0.0.2,<0.0.3"
+asyncer = ">=0.0.7,<0.0.8"
 click = ">=8.1.3,<9.0.0"
 dataclasses_json = ">=0.5.7,<0.6.0"
 fastapi = ">=0.110.1,<0.111.0"
@@ -740,8 +740,8 @@ filetype = ">=1.2.0,<2.0.0"
 httpx = ">=0.23.0"
 lazify = ">=0.4.0,<0.5.0"
 literalai = "0.0.607"
-nest-asyncio = ">=1.5.6,<2.0.0"
-numpy = {version = ">=1.26,<2.0", markers = "python_version >= \"3.9\""}
+nest-asyncio = ">=1.6.0,<2.0.0"
+numpy = ">=1.26,<2.0"
 packaging = ">=23.1,<24.0"
 pydantic = ">=1,<3"
 pyjwt = ">=2.8.0,<3.0.0"
@@ -9166,4 +9166,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.0"
 python-versions = "3.11.7"
-content-hash = "a99af79aa7b707aa61e8b79c9bf86ea1f3d00b252f57df3d76f48b8a9a69aa14"
+content-hash = "27c43a1402eeaa6d1f41543e6d381ff121dbb438dc02925e4be176bb10ac9787"
