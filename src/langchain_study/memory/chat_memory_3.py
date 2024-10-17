@@ -3,7 +3,8 @@ import sys
 
 import chainlit as cl
 from langchain.chains import ConversationChain
-from langchain.memory import ConversationBufferMemory, RedisChatMessageHistory
+from langchain.memory import ConversationBufferMemory
+from langchain_community.chat_message_histories import RedisChatMessageHistory
 from langchain_openai import ChatOpenAI
 
 chat = ChatOpenAI(model="gpt-3.5-turbo-1106")
