@@ -1183,35 +1183,6 @@ test = ["certifi", "cryptography-vectors (==43.0.1)", "pretend", "pytest (>=6.2.
 test-randomorder = ["pytest-randomly"]
 
 [[package]]
-name = "curl-cffi"
-version = "0.7.2"
-description = "libcurl ffi bindings for Python, with impersonation support."
-optional = false
-python-versions = ">=3.8"
-files = [
-    {file = "curl_cffi-0.7.2-cp38-abi3-macosx_10_9_x86_64.whl", hash = "sha256:3756d31635f62004cc3b2280f9001b03294eacb58b4017f27cc2b645b2251880"},
-    {file = "curl_cffi-0.7.2-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:3ec154c1f516364d9c52e6045be78724fc3eef711b6721cc855d32f1ad6a69c5"},
-    {file = "curl_cffi-0.7.2-cp38-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:24b084e5b0046c76a58902c2b985bdb2638d9b16af130b33b521a4c6d59792d6"},
-    {file = "curl_cffi-0.7.2-cp38-abi3-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:2caa3cd83ec2cb3ad5729311184324b03db181a0f1ca6a3abd25ba9319562396"},
-    {file = "curl_cffi-0.7.2-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:ea2ebed4ff052fcd7417cfd20fdab9415eb47ea06ca0c31896971a1c768c9bf3"},
-    {file = "curl_cffi-0.7.2-cp38-abi3-musllinux_1_1_aarch64.whl", hash = "sha256:3ca68890e839b35134e063d7c57684e14a6bca5f68948f8a689e64569abe5a40"},
-    {file = "curl_cffi-0.7.2-cp38-abi3-musllinux_1_1_x86_64.whl", hash = "sha256:afa1230a4833246f45deb404b13676ac29c37476ec94bae0005dbde85f96be35"},
-    {file = "curl_cffi-0.7.2-cp38-abi3-win32.whl", hash = "sha256:a4f58b83eab8a77f788444e347a0b4c877cf327ecb60299b5fa01e5c73b294ee"},
-    {file = "curl_cffi-0.7.2-cp38-abi3-win_amd64.whl", hash = "sha256:83f22b65fddbc46d330e49bd0a44f73112d3f0a10378e8b31d5123df9db9fc72"},
-    {file = "curl_cffi-0.7.2.tar.gz", hash = "sha256:4671f367671038b14ea2c25f49e27402686c602d0d640ac7d484ac5c1f66b538"},
-]
-
-[package.dependencies]
-certifi = ">=2024.2.2"
-cffi = ">=1.12.0"
-typing-extensions = "*"
-
-[package.extras]
-build = ["cibuildwheel", "wheel"]
-dev = ["charset-normalizer (>=3.3.2,<4.0)", "coverage (>=6.4.1,<7.0)", "cryptography (>=42.0.5,<43.0)", "httpx (==0.23.1)", "mypy (>=1.9.0,<2.0)", "pytest (>=8.1.1,<9.0)", "pytest-asyncio (>=0.23.6,<1.0)", "pytest-trio (>=0.8.0,<1.0)", "ruff (>=0.3.5,<1.0)", "trio (>=0.25.0,<1.0)", "trustme (>=1.1.0,<2.0)", "uvicorn (>=0.29.0,<1.0)", "websockets (>=12.0,<13.0)"]
-test = ["charset-normalizer (>=3.3.2,<4.0)", "cryptography (>=42.0.5,<43.0)", "fastapi (==0.110.0)", "httpx (==0.23.1)", "proxy.py (>=2.4.3,<3.0)", "pytest (>=8.1.1,<9.0)", "pytest-asyncio (>=0.23.6,<1.0)", "pytest-trio (>=0.8.0,<1.0)", "python-multipart (>=0.0.9,<1.0)", "trio (>=0.25.0,<1.0)", "trustme (>=1.1.0,<2.0)", "uvicorn (>=0.29.0,<1.0)", "websockets (>=12.0,<13.0)"]
-
-[[package]]
 name = "cycler"
 version = "0.12.1"
 description = "Composable style cycles"
@@ -1398,22 +1369,22 @@ files = [
 
 [[package]]
 name = "duckduckgo-search"
-version = "4.5.0"
+version = "6.3.2"
 description = "Search for words, documents, images, news, maps and text translation using the DuckDuckGo.com search engine."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "duckduckgo_search-4.5.0-py3-none-any.whl", hash = "sha256:0057aee08d0f60bbb69b438b65e771c920cae46a5996f6682fffee38948f6930"},
-    {file = "duckduckgo_search-4.5.0.tar.gz", hash = "sha256:36dd819cf45de7099c7311b17215933b80be74f2f8fdc8595b52d6ac01e23fc2"},
+    {file = "duckduckgo_search-6.3.2-py3-none-any.whl", hash = "sha256:cd631275292460d590d1d496995d002bf2fe6db9752713fab17b9e95924ced98"},
+    {file = "duckduckgo_search-6.3.2.tar.gz", hash = "sha256:53dbf45f8749bfc67483eb9f281f2e722a5fe644d61c54ed9e551d26cb6bcbf2"},
 ]
 
 [package.dependencies]
 click = ">=8.1.7"
-curl-cffi = ">=0.6.1"
-lxml = ">=5.1.0"
+primp = ">=0.6.4"
 
 [package.extras]
-dev = ["pytest (>=8.0.1)", "ruff (>=0.2.2)"]
+dev = ["mypy (>=1.11.1)", "pytest (>=8.3.1)", "pytest-asyncio (>=0.23.8)", "ruff (>=0.6.1)"]
+lxml = ["lxml (>=5.2.2)"]
 
 [[package]]
 name = "durationpy"
@@ -5534,6 +5505,26 @@ cymem = ">=2.0.2,<2.1.0"
 murmurhash = ">=0.28.0,<1.1.0"
 
 [[package]]
+name = "primp"
+version = "0.6.4"
+description = "HTTP client that can impersonate web browsers, mimicking their headers and `TLS/JA3/JA4/HTTP2` fingerprints"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "primp-0.6.4-cp38-abi3-macosx_10_12_x86_64.whl", hash = "sha256:e627330c1f2b723b523dc2e47caacbc5b5d0cd51ca11583b42fb8cde4da60d7d"},
+    {file = "primp-0.6.4-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:e0cb7c05dd56c8b9741042fd568c0983fc19b0f3aa209a3940ecc04b4fd60314"},
+    {file = "primp-0.6.4-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:a4adc200ccb39e130c478d8b1a94f43a5b359068c6cb65b7c848812f96d96992"},
+    {file = "primp-0.6.4-cp38-abi3-manylinux_2_34_aarch64.whl", hash = "sha256:0ebae2d3aa36b04028e4accf2609d31d2e6981659e8e2effb09ee8ba960192e1"},
+    {file = "primp-0.6.4-cp38-abi3-musllinux_1_2_aarch64.whl", hash = "sha256:77f5fa5b34eaf251815622258419a484a2a9179dcbae2a1e702a254d91f613f1"},
+    {file = "primp-0.6.4-cp38-abi3-musllinux_1_2_x86_64.whl", hash = "sha256:14cddf535cd2c4987412e90ca3ca35ae52cddbee6e0f0953d26b33a652a95692"},
+    {file = "primp-0.6.4-cp38-abi3-win_amd64.whl", hash = "sha256:96177ec2dadc47eaecbf0b22d2e93aeaf964a1be9a71e6e318d2ffb9e4242743"},
+    {file = "primp-0.6.4.tar.gz", hash = "sha256:0a3de63e46a50664bcdc76e7aaf7060bf8443698efa902864669c5fca0d1abdd"},
+]
+
+[package.extras]
+dev = ["certifi", "pytest (>=8.1.1)"]
+
+[[package]]
 name = "prometheus-client"
 version = "0.21.0"
 description = "Python client for the Prometheus monitoring system."
@@ -9219,4 +9210,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.0"
 python-versions = "3.11.7"
-content-hash = "91a59aa80afe5f3e0c7a74c250d3759d34ce1b72dcff7b0a249bd91845a0127e"
+content-hash = "bcd7359d1cd2437f7eb1761115e95c7c0c85d2c70b8942953e5c2ed9605c2fa8"
