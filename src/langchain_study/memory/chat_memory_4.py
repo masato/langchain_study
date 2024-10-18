@@ -3,7 +3,8 @@ import sys
 
 import chainlit as cl
 from langchain.chains import ConversationChain
-from langchain.memory import ConversationBufferMemory, RedisChatMessageHistory
+from langchain.memory import ConversationBufferMemory
+from langchain_community.chat_message_histories import RedisChatMessageHistory
 from langchain_core.messages import HumanMessage
 from langchain_openai import ChatOpenAI
 
@@ -24,7 +25,7 @@ async def on_chat_start() -> None:
             timeout=600,
         ).send()
         if res:
-            thread_id = res["content"]
+            thread_id = res.get("output")
 
     history = RedisChatMessageHistory(
         session_id=thread_id,
