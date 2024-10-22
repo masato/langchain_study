@@ -6111,6 +6111,7 @@ python-versions = ">=3.9"
 files = [
     {file = "PyMuPDF-1.24.12-cp39-abi3-macosx_10_9_x86_64.whl", hash = "sha256:2228a46edc53bf8f83cbe5a8cf0a83bb8cf406614e6976906d3655355e079ec5"},
     {file = "PyMuPDF-1.24.12-cp39-abi3-macosx_11_0_arm64.whl", hash = "sha256:deac1546a80afc0930ffefb9714ff8aec54210ed2b1d8ecdd44e4c2b9e0ee839"},
+    {file = "PyMuPDF-1.24.12-cp39-abi3-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:d4a387a0e98a63b1ccc326032ffe7d3982d3d92495b661ca89ea634048e11f4e"},
     {file = "PyMuPDF-1.24.12-cp39-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:dd8e8a24601c4483ed8a3699922fe48ad0179d28121816a131ba8c4534ad5682"},
     {file = "PyMuPDF-1.24.12-cp39-abi3-musllinux_1_2_x86_64.whl", hash = "sha256:f021d5060f946662345d62564fb06c4289d8522d4a249543e26de5f9ff3c9d06"},
     {file = "PyMuPDF-1.24.12-cp39-abi3-win32.whl", hash = "sha256:2d099328fefdf0ee53a4146db9b05aab120b6e4d68cc4510c07a706fed19625a"},
@@ -7413,13 +7414,13 @@ files = [
 
 [[package]]
 name = "slack-bolt"
-version = "1.21.0"
+version = "1.21.1"
 description = "The Bolt Framework for Python"
 optional = false
 python-versions = ">=3.6"
 files = [
-    {file = "slack_bolt-1.21.0-py2.py3-none-any.whl", hash = "sha256:12f99fe26f7b1b762955053ebce303d4e2394cee1e3058e35a270185f2a31e40"},
-    {file = "slack_bolt-1.21.0.tar.gz", hash = "sha256:438bee336440e78222064416c75e9353ee57e4c0377f2f41bda2212acad2387a"},
+    {file = "slack_bolt-1.21.1-py2.py3-none-any.whl", hash = "sha256:feb3c97ed7c388318d6e007a9c1b50dd88b0d59e64ff1f8c4e770db30e890ec8"},
+    {file = "slack_bolt-1.21.1.tar.gz", hash = "sha256:f0f1e7223f0e5621a768d1efce470058619b4f4eacbec405625c8c813e489c20"},
 ]
 
 [package.dependencies]
@@ -9282,4 +9283,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.0"
 python-versions = "3.11.7"
-content-hash = "e957248f46bb15e7f11cf4f675522f8567711e409365e2ec9013e53f20f2edfe"
+content-hash = "b5735ec5a5ca1ec23d476d2b78fb494293e62c09e82b912f669d07b50226d91e"
