@@ -3855,13 +3855,13 @@ type = ["mypy (==1.14.1)"]
 
 [[package]]
 name = "momento"
-version = "1.25.0"
+version = "1.26.0"
 description = "SDK for Momento"
 optional = false
 python-versions = "<4.0,>=3.7"
 files = [
-    {file = "momento-1.25.0-py3-none-any.whl", hash = "sha256:4ee2817a1fe9895f76959f318d9efc0351ac3134a1644e8d5929bb272ad2efa6"},
-    {file = "momento-1.25.0.tar.gz", hash = "sha256:21e52188b977fcbe14c2ae03c84d643fedec52c8079b414a9f742b3c40985830"},
+    {file = "momento-1.26.0-py3-none-any.whl", hash = "sha256:b060e654dfaf5d756c9e0d53b6b550284d1e2819527634f1ff883d0d1aff5803"},
+    {file = "momento-1.26.0.tar.gz", hash = "sha256:35828887e89aa6f1e3335b6a28792f035369177fb6d42d2b22a74ec224f1f0bc"},
 ]
 
 [package.dependencies]
@@ -9079,4 +9079,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.0"
 python-versions = "3.11.7"
-content-hash = "4bcb8824fbbc0ed9776dd54db77ae917dc84e695c20d219508c31bfc91baf8f9"
+content-hash = "9a7899fd7a2aea271119967ea1524c04e66aaea4e539f150f4e52247660a5f18"
