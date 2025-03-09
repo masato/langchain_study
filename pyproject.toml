@@ -9,7 +9,7 @@ packages = [{ include = "langchain_study", from = "src" }]
 [tool.poetry.dependencies]
 python = "3.11.7"
 notebook = "7.3.2"
-openai = "1.65.4"
+openai = "1.65.5"
 langchain = "0.1.7"
 pymupdf = "1.25.3"
 slack-bolt = "1.22.0"
