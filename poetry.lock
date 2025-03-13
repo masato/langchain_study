@@ -3027,26 +3027,27 @@ adal = ["adal (>=1.0.2)"]
 
 [[package]]
 name = "lancedb"
-version = "0.20.0"
+version = "0.21.1"
 description = "lancedb"
 optional = false
 python-versions = ">=3.9"
 files = [
-    {file = "lancedb-0.20.0-cp39-abi3-macosx_10_15_x86_64.whl", hash = "sha256:c439f2525a03cfe4373c79046b79c19ad90c07bbb2ed5e1b87216b17ce4717ad"},
-    {file = "lancedb-0.20.0-cp39-abi3-macosx_11_0_arm64.whl", hash = "sha256:36314d7593c43418f321dfad601f60e2ae91885dabeececdd6e9af97fef8d4da"},
-    {file = "lancedb-0.20.0-cp39-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:755f125a9d2bc96cdc52b4911c485b680969570b233071fa29c1ffce2398d5ad"},
-    {file = "lancedb-0.20.0-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:4d0f4a6ebc97a51809d2b6345bc88371c229adac057188d5b916691874dccbf5"},
-    {file = "lancedb-0.20.0-cp39-abi3-manylinux_2_28_aarch64.whl", hash = "sha256:7398a8a62f8dd095b987d1693b8af5488543d093eb16de69befe624011ad8ecb"},
-    {file = "lancedb-0.20.0-cp39-abi3-manylinux_2_28_x86_64.whl", hash = "sha256:0c88c2adf47a0d09037709b88e9d99b070fe8b5f9f52654cebc1950f3464e162"},
-    {file = "lancedb-0.20.0-cp39-abi3-win_amd64.whl", hash = "sha256:8aff6bbb121d41e55e68e56b3c5853eaae143339bf3ce7aefbb428be27c629f6"},
+    {file = "lancedb-0.21.1-cp39-abi3-macosx_10_15_x86_64.whl", hash = "sha256:2d7d83e22061e92bbaab6e38df8be71eea015122797f45501e6f850e95cd0db1"},
+    {file = "lancedb-0.21.1-cp39-abi3-macosx_11_0_arm64.whl", hash = "sha256:e9b89cf7d92cc48944d890850d964bc674c4f9c7d70cf327c552105dbe5e02ff"},
+    {file = "lancedb-0.21.1-cp39-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:5117ae33aac340f2877ee77c394b9abaed94f7efef06578a68853507392f9408"},
+    {file = "lancedb-0.21.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:9c64d929662e2c413bce86ffc5ba801070c00adbbb4113646ea2c779979a8a9e"},
+    {file = "lancedb-0.21.1-cp39-abi3-manylinux_2_28_aarch64.whl", hash = "sha256:ee6a5998425c52c938c985913375fe9bda9aa74722d841422f6d83645f4e3ccb"},
+    {file = "lancedb-0.21.1-cp39-abi3-manylinux_2_28_x86_64.whl", hash = "sha256:3f46e97fac807652f1613d3275f9209e5919e78410bf7f75bcf4a73b8496adf3"},
+    {file = "lancedb-0.21.1-cp39-abi3-win_amd64.whl", hash = "sha256:ddbd565c0e3ac779bd9d34fc068d7c1f04109fe4cef341676cd00129cf3b41a5"},
 ]
 
 [package.dependencies]
 deprecation = "*"
 overrides = ">=0.7"
 packaging = "*"
+pyarrow = ">=14"
 pydantic = ">=1.10"
-pylance = ">=0.23.2,<0.24.0"
+pylance = ">=0.23.2"
 tqdm = ">=4.27.0"
 
 [package.extras]
@@ -9081,4 +9082,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.0"
 python-versions = "3.11.7"
-content-hash = "fbea47a9b88478657df11b5c5e2b1ba39e9e1b2653cc7eb61e57602defab2df6"
+content-hash = "5948c6c192227ca1ec5961dbc4402475220f9acfe63a9d64c5163c9dabbb5a1f"
