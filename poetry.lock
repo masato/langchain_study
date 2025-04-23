@@ -4299,13 +4299,13 @@ twitter = ["twython"]
 
 [[package]]
 name = "notebook"
-version = "7.4.0"
+version = "7.4.1"
 description = "Jupyter Notebook - A web-based notebook environment for interactive computing"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "notebook-7.4.0-py3-none-any.whl", hash = "sha256:005fd21f4db6093a7b739b17df5fe60597811adb07e8255f458db4035d208e3a"},
-    {file = "notebook-7.4.0.tar.gz", hash = "sha256:581d88f83709d90ce738dfd1d759892b96e3cbbc9c4a989912ed6c6a08f0d3e8"},
+    {file = "notebook-7.4.1-py3-none-any.whl", hash = "sha256:498f12cf567d95b20e780d62d52564ee4310248b3175e996b667b5808028e5d3"},
+    {file = "notebook-7.4.1.tar.gz", hash = "sha256:96894962b230013ea0c0a466e4e642c5aace25ba8c86686175b69990ef628ff9"},
 ]
 
 [package.dependencies]
@@ -9113,4 +9113,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.0"
 python-versions = "3.11.7"
-content-hash = "37c1376b5ae9f321e9f7bb8789be10de37db8f4b78fa914179942ca58ca5b7d7"
+content-hash = "77f559c522b6c8c1792a888b5effd86df7d60511e8e7def2ee1e92691865ec9c"
