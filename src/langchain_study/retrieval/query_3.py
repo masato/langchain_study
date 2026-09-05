@@ -1,5 +1,5 @@
 from langchain.chains import RetrievalQA
-from langchain_community.vectorstores import Chroma
+from langchain_community.vectorstores.chroma import Chroma
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 
 llm = ChatOpenAI(model="gpt-3.5-turbo-1106")
