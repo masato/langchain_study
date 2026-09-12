@@ -10,7 +10,7 @@ class LogCallbackHandler(BaseCallbackHandler):
         self: "LogCallbackHandler",
         serialized: dict[str, Any],  # noqa: ARG002
         messages: list[list[BaseMessage]],
-        **kwargs: Any,  # noqa: ANN401, ARG002
+        **kwargs: Any,  # noqa: ARG002
     ) -> None:
         print("ChatModelの実行を開始します...")
         print(f"入力: {messages}")
@@ -19,7 +19,7 @@ class LogCallbackHandler(BaseCallbackHandler):
         self: "LogCallbackHandler",
         serialized: dict[str, Any],  # noqa: ARG002
         inputs: dict[str, Any],
-        **kwargs: Any,  # noqa: ANN401, ARG002
+        **kwargs: Any,  # noqa: ARG002
     ) -> None:
         print("Chainの実行を開始します...")
         print(f"入力: {inputs}")
