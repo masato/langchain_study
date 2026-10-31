@@ -74,7 +74,7 @@ class SlackStreamingCallbackHandler(BaseCallbackHandler):
     def on_llm_new_token(
         self: SlackStreamingCallbackHandler,
         token: str,
-        **kwargs: Any,  # noqa: ANN401 ARG002
+        **kwargs: Any,  # noqa: ARG002
     ) -> None:
         """Handle the new token received during the LLM process.
 
@@ -110,7 +110,7 @@ class SlackStreamingCallbackHandler(BaseCallbackHandler):
     def on_llm_end(
         self: SlackStreamingCallbackHandler,
         response: LLMResult,  # noqa: ARG002
-        **kwargs: Any,  # noqa: ANN401 ARG002
+        **kwargs: Any,  # noqa: ARG002
     ) -> None:
         """Handle the end of the LLM process.
 
