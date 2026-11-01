@@ -31,7 +31,7 @@ faiss-cpu = "1.11.0"
 langchain-experimental = "0.0.51"
 lancedb = "0.22.0"
 pandas = "2.2.3"
-python-dotenv = "1.1.0"
+python-dotenv = "1.2.2"
 pyarrow = "14.0.2"
 unstructured = { extras = ["local-inference"], version = "0.17.2" }
 
